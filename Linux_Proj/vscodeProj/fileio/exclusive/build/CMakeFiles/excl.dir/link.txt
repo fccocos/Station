@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/excl.dir/excl.c.o  -o excl 

@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/5_4_fcntl_imitation_dup/dup2/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/5_4_fcntl_imitation_dup/dup2/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/5_4_fcntl_imitation_dup/dup2/build/CMakeFiles/dup2.dir

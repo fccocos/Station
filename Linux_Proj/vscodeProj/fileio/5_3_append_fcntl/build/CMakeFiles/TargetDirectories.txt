@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/5_3_append_fcntl/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/5_3_append_fcntl/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/5_3_append_fcntl/build/CMakeFiles/append_fcntl.dir

@@ -1,0 +1,4 @@
+﻿  main.cpp
+main.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >(void)" (??0?$RBTree@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAE@XZ)，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::~RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >(void)" (??1?$RBTree@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAE@XZ)，函数 _main 中引用了该符号
+F:\Station\C++Proj\DataStructure\RedBlackTree\Debug\RedBlackTree.exe : fatal error LNK1120: 2 个无法解析的外部命令

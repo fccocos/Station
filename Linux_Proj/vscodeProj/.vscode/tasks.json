@@ -1,0 +1,51 @@
+{
+    "options": {
+        "cwd": "${fileDirname}/build"
+    },
+    "tasks": [
+        // {
+        //     "label": "per_build",
+        //     "group":{
+        //         "kind": "build",
+        //         "isDefault": true
+        //     },
+        //     "command":"test",
+        //     "args": [
+        //         "`pwd|awk -F '/' '{print $NF}'`",
+        //         "==",
+        //         "\"build\"",
+        //         "||",
+        //         "mkdir build",
+        //         "&&",
+        //         "cd build"
+        //     ]
+        // },
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                ".."
+            ]
+        },
+        {
+            "label": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command":"make",
+            "args": []
+        },
+        {
+            "label": "Build",
+            "dependsOrder": "sequence",
+            "dependsOn":[
+                // "per_build",
+                "cmake",
+                "make"
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}

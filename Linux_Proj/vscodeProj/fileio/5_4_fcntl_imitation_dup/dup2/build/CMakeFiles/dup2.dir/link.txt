@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/dup2.dir/dup2.c.o  -o dup2 

@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/tee/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/tee/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/tee/build/CMakeFiles/tee.dir

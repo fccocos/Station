@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../lib/error_functions.h
+
+../../../lib/get_num.h
+
+../../../lib/tlpi_hdr.h
+sys/types.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+errno.h
+-
+string.h
+-
+get_num.h
+../../../lib/get_num.h
+error_functions.h
+../../../lib/error_functions.h
+
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/tee/tee.c
+sys/stat.h
+-
+unistd.h
+-
+fcntl.h
+-
+tlpi_hdr.h
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/tee/tlpi_hdr.h
+

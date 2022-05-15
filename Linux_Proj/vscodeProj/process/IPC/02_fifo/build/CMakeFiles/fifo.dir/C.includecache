@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/process/IPC/02_fifo/fifo.c
+sys/types.h
+-
+sys/stat.h
+-
+unistd.h
+-
+fcntl.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/append_fcntl.dir/append_fcntl.c.o  -o append_fcntl 

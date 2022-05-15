@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/fileio/exclusive/excl.c
+unistd.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+stdio.h
+-
+stdlib.h
+-
+errno.h
+-
+

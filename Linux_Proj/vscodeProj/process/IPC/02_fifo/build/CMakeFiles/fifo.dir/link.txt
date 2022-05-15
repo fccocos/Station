@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/fifo.dir/fifo.c.o  -o fifo 
