@@ -1,0 +1,3 @@
+
+".\build\Target 1\App\24c02\24c02.o",".\build\Target 1\App\iic\iic.o",".\build\Target 1\App\key\key.o",".\build\Target 1\App\smg\smg.o",".\build\Target 1\Public\public.o",".\build\Target 1\User\main.o" TO ".\build\Target 1\IIC_EEPROM"
+PRINT(".\build\Target 1\IIC_EEPROM.map") REMOVEUNUSED

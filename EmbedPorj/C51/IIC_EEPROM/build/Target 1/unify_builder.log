@@ -1,0 +1,98 @@
+[2022-05-30 22:24:28]	link failed !, exit code: 2
+   at unify_builder.Program.Main(String[] args)
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+"@f:\Station\EmbedPorj\IIC_EEPROM\build\Target 1\IIC_EEPROM.lnp" 
+".\build\Target 1\App\24c02\24c02.o",".\build\Target 1\App\iic\iic.o",".\build\Target 1\App\key\key.o",".\build\Target 1\App\smg\smg.o",".\build\Target 1\Public\public.o",".\build\Target 1\User\main.o" TO ".\build\Target 1\IIC_EEPROM"
+PRINT(".\build\Target 1\IIC_EEPROM.map") REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _smg_display
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _at24c02_write_one_byte
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _at24c02_write_one_byte
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+    ADDRESS: 1000029H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _smg_display
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+    ADDRESS: 100007CH
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0302H BYTE (37%) *
+******************************************************************************
+Program Size: data=36.0 xdata=0 const=3 code=983
+LX51 RUN COMPLETE.  0 WARNING(S),  4 ERROR(S)
+
+
+[2022-05-30 22:26:29]	link failed !, exit code: 2
+   at unify_builder.Program.Main(String[] args)
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+"@f:\Station\EmbedPorj\IIC_EEPROM\build\Target 1\IIC_EEPROM.lnp" 
+".\build\Target 1\App\24c02\24c02.o",".\build\Target 1\App\iic\iic.o",".\build\Target 1\App\key\key.o",".\build\Target 1\App\smg\smg.o",".\build\Target 1\Public\public.o",".\build\Target 1\User\main.o" TO ".\build\Target 1\IIC_EEPROM"
+PRINT(".\build\Target 1\IIC_EEPROM.map") REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _smg_display
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _at24c02_write_one_byte
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _at24c02_write_one_byte
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+    ADDRESS: 1000029H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _smg_display
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+    ADDRESS: 100007CH
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0306H BYTE (37%) *
+******************************************************************************
+Program Size: data=36.0 xdata=0 const=3 code=987
+LX51 RUN COMPLETE.  0 WARNING(S),  4 ERROR(S)
+
+
+[2022-05-30 22:31:27]	link failed !, exit code: 2
+   at unify_builder.Program.Main(String[] args)
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+"@f:\Station\EmbedPorj\IIC_EEPROM\build\Target 1\IIC_EEPROM.lnp" 
+".\build\Target 1\App\24c02\24c02.o",".\build\Target 1\App\iic\iic.o",".\build\Target 1\App\key\key.o",".\build\Target 1\App\smg\smg.o",".\build\Target 1\Public\public.o",".\build\Target 1\User\main.o" TO ".\build\Target 1\IIC_EEPROM"
+PRINT(".\build\Target 1\IIC_EEPROM.map") REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _smg_display
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _smg_display
+    MODULE:  .\build\Target 1\User\main.o (MAIN)
+    ADDRESS: 100007CH
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0306H BYTE (37%) *
+******************************************************************************
+Program Size: data=36.0 xdata=0 const=3 code=1059
+LX51 RUN COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+
+[2022-05-30 22:31:47]	[done]
+	build successfully !
+
+[2022-05-30 22:31:51]	[done]
+	build successfully !
+
+[2022-05-30 22:32:28]	[done]
+	build successfully !
+
+[2022-05-30 22:41:05]	[done]
+	build successfully !
+
+[2022-05-30 22:41:56]	[done]
+	build successfully !
+
+[2022-05-30 22:44:23]	[done]
+	build successfully !
+

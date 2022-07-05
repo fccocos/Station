@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/testMysem.dir/testMysem.c.o CMakeFiles/testMysem.dir/mysem.c.o -o testMysem  -Wl,-rpath,/usr/local/lib /usr/local/lib/libcunit.so 

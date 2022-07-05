@@ -1,0 +1,419 @@
+[2022-05-19 22:43:49]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C202 IN LINE 7 OF .\SRC\MAIN.C: 'LED': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-05-19 22:50:26]	[done]
+	build successfully !
+
+[2022-05-19 23:16:10]	[done]
+	build successfully !
+
+[2022-05-23 15:37:21]	[done]
+	build successfully !
+
+[2022-05-23 15:57:06]	[done]
+	build successfully !
+
+[2022-05-23 15:59:34]	[done]
+	build successfully !
+
+[2022-05-23 16:04:52]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 5 OF .\SRC\MAIN.C: syntax error near 'P2', expected 'const'
+*** ERROR C202 IN LINE 14 OF .\SRC\MAIN.C: 'LEDS': undefined identifier
+*** ERROR C202 IN LINE 16 OF .\SRC\MAIN.C: 'LES': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  3 ERROR(S)
+
+[2022-05-23 16:05:43]	[done]
+	build successfully !
+
+[2022-05-23 16:09:41]	[done]
+	build successfully !
+
+[2022-05-23 16:11:46]	[done]
+	build successfully !
+
+[2022-05-23 16:14:30]	[done]
+	build successfully !
+
+[2022-05-23 16:15:47]	[done]
+	build successfully !
+
+[2022-05-23 16:37:01]	[done]
+	build successfully !
+
+[2022-05-23 16:45:49]	[done]
+	build successfully !
+
+[2022-05-23 16:45:54]	[done]
+	build successfully !
+
+[2022-05-23 16:47:24]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+d:/Keil_v5/C51/INC/reg52.h:13: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:13: syntax error: token -> 'P0' ; column 6
+d:/Keil_v5/C51/INC/reg52.h:14: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:15: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:16: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:17: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:18: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:19: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:20: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:21: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:22: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:23: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:24: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:25: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:26: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:27: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:28: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:29: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:30: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:31: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:32: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:33: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:36: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:37: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:38: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:39: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:40: error 1: Syntax error, declaration ignored at 'sfr'
+d:/Keil_v5/C51/INC/reg52.h:45: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:46: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:47: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:48: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:49: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:50: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:51: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:54: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:55: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:56: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:57: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:58: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:59: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:60: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:61: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:64: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:65: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:66: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:67: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:68: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:69: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:70: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:73: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:74: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:75: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:76: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:77: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:78: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:81: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:82: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:83: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:84: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:85: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:86: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:87: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:88: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:91: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:92: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:93: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:94: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:95: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:96: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:97: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:98: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:101: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:102: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:105: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:106: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:107: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:108: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:109: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:110: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:111: error 1: Syntax error, declaration ignored at 'sbit'
+d:/Keil_v5/C51/INC/reg52.h:112: error 1: Syntax error, declaration ignored at 'sbit'
+.\src\main.c:13: error 20: Undefined identifier 'P2'
+.\src\main.c:15: error 20: Undefined identifier 'P2'
+
+[2022-05-23 16:47:42]	[done]
+	build successfully !
+
+[2022-05-23 16:49:04]	[done]
+	build successfully !
+
+[2022-05-23 16:50:39]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 16 OF .\SRC\MAIN.C: syntax error near '~', expected ';'
+*** ERROR C141 IN LINE 16 OF .\SRC\MAIN.C: syntax error near '=', expected 'sizeof'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+[2022-05-23 16:51:21]	[done]
+	build successfully !
+
+[2022-05-23 16:56:17]	[done]
+	build successfully !
+
+[2022-05-23 16:57:01]	[done]
+	build successfully !
+
+[2022-05-23 17:06:18]	[done]
+	build successfully !
+
+[2022-05-23 17:17:02]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 18 OF .\SRC\MAIN.C: syntax error near 'int', expected 'sizeof'
+*** ERROR C202 IN LINE 19 OF .\SRC\MAIN.C: 'i': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+[2022-05-23 17:17:51]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 18 OF .\SRC\MAIN.C: syntax error near 'int', expected 'sizeof'
+*** ERROR C202 IN LINE 18 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 18 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 18 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C141 IN LINE 18 OF .\SRC\MAIN.C: syntax error near ')', expected ';'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  5 ERROR(S)
+
+[2022-05-23 17:18:32]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 36 OF .\SRC\MAIN.C: 'shift_right_8': missing function-prototype
+*** ERROR C267 IN LINE 36 OF .\SRC\MAIN.C: 'shift_right_8': requires ANSI-style prototype
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)
+
+[2022-05-23 17:20:53]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 16 OF .\SRC\MAIN.C: syntax error near 'sfr', expected 'bit'
+*** ERROR C202 IN LINE 20 OF .\SRC\MAIN.C: 'port': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+[2022-05-23 17:22:47]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 37 OF .\SRC\MAIN.C: 'shift_right_8': missing function-prototype
+*** ERROR C267 IN LINE 37 OF .\SRC\MAIN.C: 'shift_right_8': requires ANSI-style prototype
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)
+
+[2022-05-23 17:23:31]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 37 OF .\SRC\MAIN.C: 'shift_right_8': missing function-prototype
+*** ERROR C267 IN LINE 37 OF .\SRC\MAIN.C: 'shift_right_8': requires ANSI-style prototype
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)
+
+[2022-05-23 17:24:07]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 16 OF .\SRC\MAIN.C: syntax error near 'sfr', expected 'bit'
+*** ERROR C202 IN LINE 20 OF .\SRC\MAIN.C: 'port': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+[2022-05-23 17:25:16]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\LED\build\Debug\LED.lnp 
+.\build\Debug\src\main.o TO .\build\Debug\LED
+PRINT(.\build\Debug\LED.map) REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+    ADDRESS: 1000004H
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004AH BYTE ( 3%) *
+******************************************************************************
+Program Size: data=9.0 xdata=0 const=0 code=20
+LX51 RUN COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+
+[2022-05-23 17:26:01]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\LED\build\Debug\LED.lnp 
+.\build\Debug\src\main.o TO .\build\Debug\LED
+PRINT(.\build\Debug\LED.map) REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+    ADDRESS: 1000004H
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004AH BYTE ( 3%) *
+******************************************************************************
+Program Size: data=9.0 xdata=0 const=0 code=20
+LX51 RUN COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+
+[2022-05-23 17:26:33]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\LED\build\Debug\LED.lnp 
+.\build\Debug\src\main.o TO .\build\Debug\LED
+PRINT(.\build\Debug\LED.map) REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+    ADDRESS: 1000004H
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0036H BYTE ( 2%) *
+******************************************************************************
+Program Size: data=9.0 xdata=0 const=0 code=20
+LX51 RUN COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+
+[2022-05-23 17:27:02]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\LED\build\Debug\LED.lnp 
+.\build\Debug\src\main.o TO .\build\Debug\LED
+PRINT(.\build\Debug\LED.map) REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+    ADDRESS: 1000004H
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0036H BYTE ( 2%) *
+******************************************************************************
+Program Size: data=9.0 xdata=0 const=0 code=20
+LX51 RUN COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+
+[2022-05-23 17:27:39]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\LED\build\Debug\LED.lnp 
+.\build\Debug\src\main.o TO .\build\Debug\LED
+PRINT(.\build\Debug\LED.map) REMOVEUNUSED
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  shift_right_8
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+    ADDRESS: 1000004H
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0036H BYTE ( 2%) *
+******************************************************************************
+Program Size: data=9.0 xdata=0 const=0 code=20
+LX51 RUN COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+
+[2022-05-23 17:28:01]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C202 IN LINE 36 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 37 OF .\SRC\MAIN.C: 'i': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+[2022-05-23 17:28:13]	[done]
+	build successfully !
+
+[2022-05-23 17:31:34]	[done]
+	build successfully !
+
+[2022-05-23 17:32:14]	[done]
+	build successfully !
+
+[2022-05-23 17:32:56]	[done]
+	build successfully !
+
+[2022-05-23 17:33:30]	[done]
+	build successfully !
+
+[2022-05-23 17:35:13]	[done]
+	build successfully !
+
+[2022-05-23 17:40:34]	[done]
+	build successfully !
+
+[2022-05-23 17:41:22]	[done]
+	build successfully !
+
+[2022-05-23 17:42:18]	[done]
+	build successfully !
+
+[2022-05-23 17:47:00]	compilation failed at : "f:\Station\EmbedPorj\LED\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 42 OF .\SRC\MAIN.C: syntax error near '~', expected ';'
+*** ERROR C141 IN LINE 42 OF .\SRC\MAIN.C: syntax error near '=', expected 'sizeof'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  2 ERROR(S)
+
+[2022-05-23 17:47:14]	[done]
+	build successfully !
+
+[2022-05-23 17:48:05]	[done]
+	build successfully !
+
+[2022-05-23 17:49:33]	[done]
+	build successfully !
+
+[2022-05-23 17:50:16]	[done]
+	build successfully !
+
+[2022-05-23 18:20:59]	[done]
+	build successfully !
+
+[2022-05-23 18:26:32]	[done]
+	build successfully !
+
+[2022-05-23 18:27:52]	[done]
+	build successfully !
+
+[2022-05-23 18:29:31]	[done]
+	build successfully !
+
+[2022-05-23 18:30:24]	[done]
+	build successfully !
+

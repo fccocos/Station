@@ -1,0 +1,3 @@
+
+.\build\Debug\src\main.o TO .\build\Debug\MatrixKeys
+PRINT(.\build\Debug\MatrixKeys.map) REMOVEUNUSED

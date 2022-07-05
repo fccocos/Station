@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/03_FindPythonModuleAndPackage/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/03_FindPythonModuleAndPackage/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/03_FindPythonModuleAndPackage/build/CMakeFiles/pure_embedding_py.dir

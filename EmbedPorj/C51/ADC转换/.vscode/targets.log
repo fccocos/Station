@@ -1,0 +1,303 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make.exe: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1_st_20200221-0903_longpath
+# Built for x86_64-w64-mingw32
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Tue Jun 21 17:58:21 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
+# automatic
+?F = $(notdir $?)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# default
+.SHELLFLAGS := -c
+# makefile
+MAKEFLAGS = pqrR
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := f:/Station/EmbedPorj/ADC转换
+# environment
+EIDE_OPENOCD = 
+# default
+SHELL := D:/Program Files/Git/bin/sh.exe
+# environment
+WINDIR = C:\Windows
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_translationsConfigFile":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\bbca1a7059cee8a1b93da8947fee1c4f.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\bbca1a7059cee8a1b93da8947fee1c4f.zh-cn\\4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\bbca1a7059cee8a1b93da8947fee1c4f.zh-cn\\corrupted.info","_languagePackSupport":true}
+# environment
+VBOX_MSI_INSTALL_PATH = D:\Prog 
+ram Files\Oracle\VirtualBox\
+# environment
+ONEDRIVE = C:\Users\Administrator\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile
+MAKEFILE_LIST := 
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\ADMINI~1\AppData\Local\Temp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-6ade845d-f0db-4dc5-b78c-98b4cce2eb89-sock
+# environment
+VSCODE_CWD = F:\Station\EmbedPorj\ADCת��
+# environment
+EIDE_ARM_GCC = 
+# default
+MAKE_HOST := x86_64-w64-mingw32
+# environment
+PATH = C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\Git\bin;D:\Program Files\CMake\bin;D:\MinGW\bin;D:\Program Files\MongoDB\Server\5.0\bin;D:\Program Files\nodejs;D:\Program Files\Bandizip\;D:\Program Files (x86)\Notepad++;D:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Program Files\Microsoft VS Code Insiders\bin;D:\Program Files\Microsoft VS Code\bin;D:\vim82;C:\Program Files\dotnet\;D:\Program Files (x86)\NetSarang\Xshell 7\;D:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\Administrator\AppData\Roaming\Python\Python310\Scripts;C:\Program Files\PowerShell\7\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\Pandoc\;C:\Users\Administrator\.dotnet\tools;C:\Users\Administrator\.eide\bin\builder\bin;C:\Users\Administrator\.eide\bin\builder\utils;C:\Users\Administrator\.eide\bin\scripts;C:\Users\Administrator\.eide\tools;C:\Users\Administrator\.eide\bin\builder\msys\bin
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132952347769050366
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+USERPROFILE = C:\Users\Administrator
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync
+# automatic
+%F = $(notdir $%)
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2964_CTFUEAGMYCWDAAUH
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = MS-NEOFRLQIRTKN
+# environment
+PROGRAMFILES = C:\Program Files
+# default
+.LOADED := 
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = Administrator
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Administrator\AppData\Roaming\Code\CachedData\4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# environment
+LOGONSERVER = \\MS-NEOFRLQIRTKN
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = MS-NEOFRLQIRTKN
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_DEVICE_PIXEL_RATIO = auto
+# default
+MAKE_VERSION := 4.2.1_st_20200221-0903_longpath
+# makefile
+.DEFAULT_GOAL := 
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+EIDE_MSYS = C:\Users\Administrator\.eide\bin\builder\msys\bin
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\Administrator\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# default
+.VARIABLES := 
+# environment
+EIDE_TOOLS_DIR = C:\Users\Administrator\.eide\tools
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\9e7283c68e6159fd1e9872b65f264be5-1.68.0-main-sock
+# environment
+HOMEPATH = \Users\Administrator
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PT8HOME = C:\Program Files\Cisco Packet Tracer 8.0
+# environment
+SYSTEMROOT = C:\Windows
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\Administrator\AppData\Roaming
+# environment
+TEMP = C:\Users\ADMINI~1\AppData\Local\Temp
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+EIDE_JLINK = 
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 9e0a
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 2964
+# environment
+DOTNET_CLI_TELEMETRY_OPTOUT = 1
+# environment
+USERDOMAIN_ROAMINGPROFILE = MS-NEOFRLQIRTKN
+# variable set hash-table stats:
+# Load=105/1024=10%, Rehash=0, Collisions=17/122=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key f:/Station/EmbedPorj/ADCת��, mtime 1655805323): 15 files, no impossibilities.
+
+# 15 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile.mak:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 22 / storage = 211 B / avg = 9 B
+# current buf: size = 8162 B / used = 211 B / count = 22 / avg = 9 B
+
+# strcache performance: lookups = 24 / hit rate = 8%
+# hash-table stats:
+# Load=22/8192=0%, Rehash=0, Collisions=1/24=4%
+# Finished Make data base on Tue Jun 21 17:58:21 2022
+
+ 

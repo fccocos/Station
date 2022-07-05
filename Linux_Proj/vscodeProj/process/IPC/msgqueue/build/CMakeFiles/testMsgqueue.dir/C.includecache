@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/process/msgqueue/msgqueue.h
+sys/msg.h
+-
+
+/mnt/f/Station/Linux_Proj/vscodeProj/process/msgqueue/testMsgqueue.c
+msgqueue.h
+/mnt/f/Station/Linux_Proj/vscodeProj/process/msgqueue/msgqueue.h
+string.h
+-
+stdio.h
+-
+error.h
+-
+assert.h
+-
+stdlib.h
+-
+CUnit/CUnit.h
+-
+CUnit/Basic.h
+-
+CUnit/CUError.h
+-
+

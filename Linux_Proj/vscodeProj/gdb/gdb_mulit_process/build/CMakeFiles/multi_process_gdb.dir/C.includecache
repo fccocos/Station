@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/gdb/gdb_mulit_process/multi_process_gdb.c
+stdio.h
+-
+sys/types.h
+-
+unistd.h
+-
+

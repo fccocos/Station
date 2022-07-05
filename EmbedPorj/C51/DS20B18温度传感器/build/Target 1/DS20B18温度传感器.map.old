@@ -1,0 +1,328 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          05/31/2022  19:11:22  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\build\Target 1\App\ds18b20\ds18b20.o, .\build\Target 1\App\msg\msg.o, .\build\Target 1\Pub
+>> lic\public.o, .\build\Target 1\User\main.o TO .\build\Target 1\DS20B18�¶ȴ����� PRINT (.\build\Target 1\DS20B18�¶ȴ
+>> �����.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  .\build\Target 1\App\ds18b20\ds18b20.o (DS18B20)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\App\msg\msg.o (MSG)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\Public\public.o (PUBLIC)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\User\main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  D:\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FCAST)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPS.LIB (?C?CASTF)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?SIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?LNEG)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\build\Target 1\DS20B18�¶ȴ����� (DS18B20)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000610H   CODE
+I:000000H   I:000000H   I:00007FH   00002BH   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\build\Target 1\DS20B18�¶ȴ����� (DS18B20)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000019H   000012H   BYTE   UNIT     DATA           _DATA_GROUP_
+00001AH   00002AH   000011H   BYTE   UNIT     DATA           ?DT?MSG
+00002BH   00002BH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   0000BEH   0000BCH   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0000BFH   000151H   000093H   BYTE   UNIT     CODE           ?PR?_MSG_DISPLAY?MSG
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/31/2022  19:11:22  PAGE 2
+
+
+000152H   0001CCH   00007BH   BYTE   UNIT     CODE           ?PR?DS18B20_GET_TEMPURATURE?DS18B20
+0001CDH   000220H   000054H   BYTE   UNIT     CODE           ?PR?DS18B20_CHECK?DS18B20
+000221H   000265H   000045H   BYTE   UNIT     CODE           ?PR?_DS18B20_WRITE_ONE_BYTE?DS18B20
+000266H   000291H   00002CH   BYTE   UNIT     CODE           ?PR?DS18B20_READ_ONE_BYTE?DS18B20
+000292H   0002B1H   000020H   BYTE   UNIT     CODE           ?PR?DS18B20_READ_ONE_BIT?DS18B20
+0002B2H   0002C5H   000014H   BYTE   UNIT     CODE           ?C_INITSEG
+0002C6H   0002D7H   000012H   BYTE   UNIT     CODE           ?PR?DS18B20_RESET?DS18B20
+0002D8H   0002E7H   000010H   BYTE   UNIT     CODE           ?PR?DS18B20_START?DS18B20
+0002E8H   0002F2H   00000BH   BYTE   UNIT     CODE           ?PR?_DELAY_10US?PUBLIC
+0002F3H   0002F8H   000006H   BYTE   UNIT     CODE           ?PR?DS18B20_INIT?DS18B20
+0002F9H   0007FFH   000507H   ---    ---      **GAP**
+000800H   000A8AH   00028BH   BYTE   UNIT     CODE           ?C?LIB_CODE
+000A8BH   000BD9H   00014FH   ---    ---      **GAP**
+000BDAH   000C65H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           00001EH   BYTE   UNIT     CODE           ?PR?_DELAY_MS?PUBLIC
+
+
+
+OVERLAY MAP OF MODULE:   .\build\Target 1\DS20B18�¶ȴ����� (DS18B20)
+
+
+FUNCTION/MODULE                       BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE           START  STOP  START  STOP
+=============================================================
+?C_C51STARTUP                        ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                            ----- -----  0008H 000FH
+  +--> DS18B20_INIT/DS18B20
+  +--> DS18B20_GET_TEMPURATURE/DS18B20
+  +--> _MSG_DISPLAY/MSG
+
+DS18B20_INIT/DS18B20                 ----- -----  ----- -----
+  +--> DS18B20_RESET/DS18B20
+  +--> DS18B20_CHECK/DS18B20
+
+DS18B20_RESET/DS18B20                ----- -----  ----- -----
+  +--> _DELAY_10US/PUBLIC
+
+_DELAY_10US/PUBLIC                   ----- -----  ----- -----
+
+DS18B20_CHECK/DS18B20                ----- -----  0017H 0017H
+  +--> _DELAY_10US/PUBLIC
+
+DS18B20_GET_TEMPURATURE/DS18B20      ----- -----  0010H 0016H
+  +--> DS18B20_START/DS18B20
+  +--> DS18B20_RESET/DS18B20
+  +--> DS18B20_CHECK/DS18B20
+  +--> _DS18B20_WRITE_ONE_BYTE/DS18B20
+  +--> DS18B20_READ_ONE_BYTE/DS18B20
+
+DS18B20_START/DS18B20                ----- -----  ----- -----
+  +--> DS18B20_RESET/DS18B20
+  +--> DS18B20_CHECK/DS18B20
+  +--> _DS18B20_WRITE_ONE_BYTE/DS18B20
+
+_DS18B20_WRITE_ONE_BYTE/DS18B20      ----- -----  0017H 0019H
+  +--> _DELAY_10US/PUBLIC
+
+DS18B20_READ_ONE_BYTE/DS18B20        ----- -----  0017H 0018H
+  +--> DS18B20_READ_ONE_BIT/DS18B20
+
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/31/2022  19:11:22  PAGE 3
+
+
+DS18B20_READ_ONE_BIT/DS18B20         ----- -----  0019H 0019H
+  +--> _DELAY_10US/PUBLIC
+
+_MSG_DISPLAY/MSG                     ----- -----  0010H 0014H
+  +--> _DELAY_10US/PUBLIC
+
+?C_INITSEG                           ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\build\Target 1\DS20B18�¶ȴ����� (DS18B20)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      01000944H   CODE     ---       ?C?CASTF
+      010009C5H   CODE     ---       ?C?CLDOPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      01000910H   CODE     ---       ?C?FCASTC
+      0100090BH   CODE     ---       ?C?FCASTI
+      01000906H   CODE     ---       ?C?FCASTL
+      0100097BH   CODE     ---       ?C?FPGETOPN2
+      01000800H   CODE     ---       ?C?FPMUL
+      010009B0H   CODE     ---       ?C?FPNANRESULT
+      010009BAH   CODE     ---       ?C?FPOVERFLOW
+      01000992H   CODE     ---       ?C?FPRESULT
+      010009A6H   CODE     ---       ?C?FPRESULT2
+      010009B7H   CODE     ---       ?C?FPUNDERFLOW
+      01000A28H   CODE     ---       ?C?LNEG
+      010009F2H   CODE     ---       ?C?SIDIV
+      01000A36H   CODE     ---       ?C?UIDIV
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000C21H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      010002E8H   CODE     ---       _delay_10us
+*DEL*:00000000H   CODE     ---       _delay_ms
+      01000221H   CODE     ---       _ds18b20_write_one_byte
+      010000BFH   CODE     ---       _msg_display
+      010001CDH   CODE     ---       ds18b20_check
+      01000152H   CODE     ---       ds18b20_get_tempurature
+      010002F3H   CODE     ---       ds18b20_init
+      01000292H   CODE     ---       ds18b20_read_one_bit
+      01000266H   CODE     ---       ds18b20_read_one_byte
+      010002C6H   CODE     ---       ds18b20_reset
+      010002D8H   CODE     ---       ds18b20_start
+      0000001AH   DATA     ---       gmsg_code
+      01000003H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\build\Target 1\DS20B18�¶ȴ����� (DS18B20)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       DS18B20
+      01000152H   PUBLIC    CODE     ---       ds18b20_get_tempurature
+      01000292H   PUBLIC    CODE     ---       ds18b20_read_one_bit
+      01000266H   PUBLIC    CODE     ---       ds18b20_read_one_byte
+      01000221H   PUBLIC    CODE     ---       _ds18b20_write_one_byte
+      010001CDH   PUBLIC    CODE     ---       ds18b20_check
+      010002C6H   PUBLIC    CODE     ---       ds18b20_reset
+      010002D8H   PUBLIC    CODE     ---       ds18b20_start
+      010002F3H   PUBLIC    CODE     ---       ds18b20_init
+
+      010002F3H   BLOCK     CODE     ---       LVL=0
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/31/2022  19:11:22  PAGE 4
+
+
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010002D8H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010002C6H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001CDH   BLOCK     CODE     ---       LVL=0
+      010001CDH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000017H   SYMBOL    DATA     VOID      time_tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000221H   BLOCK     CODE     ---       LVL=0
+      01000223H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000018H   SYMBOL    DATA     VOID      i
+      00000019H   SYMBOL    DATA     VOID      tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000266H   BLOCK     CODE     ---       LVL=0
+      01000266H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000017H   SYMBOL    DATA     VOID      value
+      00000007H   SYMBOL    DATA     VOID      tmp
+      00000018H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000292H   BLOCK     CODE     ---       LVL=0
+      01000292H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000019H   SYMBOL    DATA     VOID      dat
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000152H   BLOCK     CODE     ---       LVL=0
+      01000152H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000010H   SYMBOL    DATA     VOID      tempur
+      00000014H   SYMBOL    DATA     VOID      value
+      00000016H   SYMBOL    DATA     VOID      tmpL
+      00000007H   SYMBOL    DATA     VOID      tmpH
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MSG
+      0000001AH   PUBLIC    DATA     ---       gmsg_code
+      010000BFH   PUBLIC    CODE     ---       _msg_display
+
+      010000BFH   BLOCK     CODE     ---       LVL=0
+      010000C5H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000013H   SYMBOL    DATA     VOID      pos_tmp
+      00000014H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       PUBLIC
+      010002E8H   PUBLIC    CODE     ---       _delay_10us
+
+      010002E8H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+      00000006H   SYMBOL    DATA     VOID      i
+      00000004H   SYMBOL    DATA     VOID      j
+
+      ---         MODULE    ---      ---       MAIN
+      01000003H   PUBLIC    CODE     ---       main
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/31/2022  19:11:22  PAGE 5
+
+
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000003H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000008H   SYMBOL    DATA     VOID      i
+      00000009H   SYMBOL    DATA     VOID      tempur
+      0000000BH   SYMBOL    DATA     VOID      tempur_smg
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C?FPMUL
+      01000800H   PUBLIC    CODE     ---       ?C?FPMUL
+
+      ---         MODULE    ---      ---       ?C?FCAST
+      01000910H   PUBLIC    CODE     ---       ?C?FCASTC
+      0100090BH   PUBLIC    CODE     ---       ?C?FCASTI
+      01000906H   PUBLIC    CODE     ---       ?C?FCASTL
+
+      ---         MODULE    ---      ---       ?C?CASTF
+      01000944H   PUBLIC    CODE     ---       ?C?CASTF
+
+      ---         MODULE    ---      ---       ?C?FPGETOPN
+      0100097BH   PUBLIC    CODE     ---       ?C?FPGETOPN2
+      010009B0H   PUBLIC    CODE     ---       ?C?FPNANRESULT
+      010009BAH   PUBLIC    CODE     ---       ?C?FPOVERFLOW
+      01000992H   PUBLIC    CODE     ---       ?C?FPRESULT
+      010009A6H   PUBLIC    CODE     ---       ?C?FPRESULT2
+      010009B7H   PUBLIC    CODE     ---       ?C?FPUNDERFLOW
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      010009C5H   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?SIDIV
+      010009F2H   PUBLIC    CODE     ---       ?C?SIDIV
+
+      ---         MODULE    ---      ---       ?C?LNEG
+      01000A28H   PUBLIC    CODE     ---       ?C?LNEG
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000C21H   PUBLIC    CODE     ---       ?C_START
+
+      ---         MODULE    ---      ---       ?C?UIDIV
+      01000A36H   PUBLIC    CODE     ---       ?C?UIDIV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0313H BYTE (38%) *
+******************************************************************************
+
+Program Size: data=44.0 xdata=0 const=0 code=1552
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

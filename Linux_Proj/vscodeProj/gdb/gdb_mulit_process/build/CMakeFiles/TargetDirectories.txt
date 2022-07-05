@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/gdb/gdb_mulit_process/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/gdb/gdb_mulit_process/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/gdb/gdb_mulit_process/build/CMakeFiles/multi_process_gdb.dir

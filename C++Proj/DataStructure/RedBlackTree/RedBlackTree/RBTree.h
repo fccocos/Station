@@ -59,7 +59,7 @@ public:
 	* @param key为键值对中的键
 	* @return 成功返回当前对象，否则返回nullptr
 	*/
-	RBTree<T1, T2>& reomve(const T1& key);
+	RBTree<T1, T2>& remove(const T1& key);
 	
 	/*
 	* @brief 通过val来指定结点来进行删除，删除的为最先找到的那一个红黑结点
@@ -77,6 +77,18 @@ public:
 	*/
 	RBTree<T1, T2>& insert(const T1& key, const T2& val);
 
+	void show()
+	{
+		if (root != nullptr)
+			MidShow(root);
+	}
+
+	void reverse_show()
+	{
+	 if (root != nullptr)
+		ReverseShow(root);
+	}
+	
 private:
 	/*私有数据类型的定义*/
 
@@ -143,7 +155,7 @@ private:
 	*		 位置为父亲的右孩子：此时先对祖父节点做一次左单旋，然后将祖父结
 	*		 点的颜色变成红色，将父亲结点的颜色变成黑色。
 	*/
-	void fixUpContinuousNodes(RBNode* node);
+	void fixUpContinuousRedNodes(RBNode* node);
 	
 	/*修复“失衡结点”*/
 	void fixUpUnbalancedNode(RBNode* node);
@@ -156,13 +168,18 @@ private:
 	  3. 删除结点有两个孩子结点
 	     1. 删除结点既有左子树又有右子树，可以用前驱或后继进行替换
 	*/
-	void  replaceLastNode(RBNode* node);
+	void  replaceLastNode(RBNode*& node);
+
+	void MidShow(RBNode* node);
+	void ReverseShow(RBNode* node);
 	
 private:
 	RBNode* root = nullptr;
 
 };
 
+template <class T>
+inline void swap(T& a, T& b);
 
 #endif
 

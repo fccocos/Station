@@ -1,0 +1,538 @@
+[2022-05-26 11:26:31]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C129 IN LINE 25 OF .\SRC\gunfire_C51_DCStepMotor_func.h: missing ';' before 'void'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-05-26 11:28:12]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C275 IN LINE 27 OF .\SRC\gunfire_C51_DCStepMotor_func.h: expression with possibly no effect
+*** ERROR C141 IN LINE 27 OF .\SRC\gunfire_C51_DCStepMotor_func.h: syntax error near '=', expected '__asm'
+*** ERROR C141 IN LINE 14 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: syntax error near '=', expected '__asm'
+C51 COMPILATION COMPLETE.  1 WARNING(S),  2 ERROR(S)
+
+[2022-05-26 11:29:53]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C275 IN LINE 27 OF .\SRC\gunfire_C51_DCStepMotor_func.h: expression with possibly no effect
+*** ERROR C141 IN LINE 27 OF .\SRC\gunfire_C51_DCStepMotor_func.h: syntax error near '=', expected '__asm'
+*** ERROR C141 IN LINE 14 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: syntax error near '=', expected '__asm'
+C51 COMPILATION COMPLETE.  1 WARNING(S),  2 ERROR(S)
+
+[2022-05-26 11:33:36]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_pulses
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  G_DCStepMotor_Initial
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 014FH BYTE (16%) *
+******************************************************************************
+Program Size: data=31.0 xdata=0 const=0 code=298
+LX51 RUN COMPLETE.  0 WARNING(S),  7 ERROR(S)
+
+
+[2022-05-26 11:35:02]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_pulses
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  G_DCStepMotor_Initial
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0147H BYTE (15%) *
+******************************************************************************
+Program Size: data=31.0 xdata=0 const=0 code=298
+LX51 RUN COMPLETE.  0 WARNING(S),  7 ERROR(S)
+
+
+[2022-05-26 11:38:28]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 5 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: syntax error near '{', expected 'hdata'
+*** ERROR C231 IN LINE 6 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'P1': redefinition
+*** ERROR C231 IN LINE 6 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'P1': redefinition
+*** ERROR C231 IN LINE 7 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'gunfire_DCStepMotor_Direction': redefinition
+*** ERROR C231 IN LINE 8 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'gunfire_DCStepMotor_Speed': redefinition
+*** ERROR C231 IN LINE 9 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'gunfire_DCStepMotor_isRunning': redefinition
+*** ERROR C141 IN LINE 10 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: syntax error near '}', expected 'hdata'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  7 ERROR(S)
+
+[2022-05-26 11:39:57]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Speed
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_isRunning
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Direction
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_pulses
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 013BH BYTE (15%) *
+******************************************************************************
+Program Size: data=31.0 xdata=0 const=0 code=298
+LX51 RUN COMPLETE.  0 WARNING(S),  9 ERROR(S)
+
+
+[2022-05-26 11:42:11]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Speed
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_isRunning
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Direction
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_pulses
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 013BH BYTE (15%) *
+******************************************************************************
+Program Size: data=31.0 xdata=0 const=0 code=298
+LX51 RUN COMPLETE.  0 WARNING(S),  9 ERROR(S)
+
+
+[2022-05-26 11:43:20]	[done]
+	build successfully !
+
+[2022-05-26 11:43:51]	[done]
+	build successfully !
+
+[2022-05-26 13:51:49]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Speed
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_isRunning
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Direction
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_pulses
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0169H BYTE (17%) *
+******************************************************************************
+Program Size: data=32.0 xdata=0 const=0 code=301
+LX51 RUN COMPLETE.  0 WARNING(S),  9 ERROR(S)
+
+
+[2022-05-26 13:54:40]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Speed
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_isRunning
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_Direction
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  gunfire_DCStepMotor_pulses
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0169H BYTE (17%) *
+******************************************************************************
+Program Size: data=32.0 xdata=0 const=0 code=301
+LX51 RUN COMPLETE.  0 WARNING(S),  9 ERROR(S)
+
+
+[2022-05-26 13:59:19]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0169H BYTE (17%) *
+******************************************************************************
+Program Size: data=32.0 xdata=0 const=0 code=301
+LX51 RUN COMPLETE.  0 WARNING(S),  5 ERROR(S)
+
+
+[2022-05-26 14:01:42]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01932] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+LX51 LINKER/LOCATER V4.66.97.0 - SN: Eval Version
+COPYRIGHT ARM Germany GmbH 1995 - 2019
+@f:\Station\EmbedPorj\DCStepMotor\build\Debug\DCStepMotor.lnp 
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  ?_G_Swap?BYTE
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _G_Swap
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_ms
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _delay_10us
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _sleep
+    MODULE:  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+   DEFINED:  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0169H BYTE (17%) *
+******************************************************************************
+Program Size: data=32.0 xdata=0 const=0 code=301
+LX51 RUN COMPLETE.  0 WARNING(S),  5 ERROR(S)
+
+
+[2022-05-26 14:05:18]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C129 IN LINE 11 OF .\inc\gunfire_C51_DCStepMotor_func.h: missing ';' before 'gunfire_DCStepMotor_pulses'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-05-26 14:06:02]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C129 IN LINE 48 OF .\inc\gunfire_C51_DCStepMotor_func.h: missing ';' before 'G_IndependentKey_Scan'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-05-26 14:07:39]	[done]
+	build successfully !
+
+[2022-05-26 14:32:04]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 38 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Control': missing function-prototype
+*** ERROR C267 IN LINE 38 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Control': requires ANSI-style prototype
+*** ERROR C231 IN LINE 135 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Control': redefinition
+*** ERROR C231 IN LINE 146 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Control': redefinition
+C51 COMPILATION COMPLETE.  1 WARNING(S),  3 ERROR(S)
+
+[2022-05-26 14:33:47]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': missing function-prototype
+*** ERROR C267 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': requires ANSI-style prototype
+*** ERROR C231 IN LINE 32 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C231 IN LINE 60 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+C51 COMPILATION COMPLETE.  1 WARNING(S),  3 ERROR(S)
+
+[2022-05-26 14:34:04]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': missing function-prototype
+*** ERROR C267 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': requires ANSI-style prototype
+*** ERROR C231 IN LINE 32 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C231 IN LINE 60 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+C51 COMPILATION COMPLETE.  1 WARNING(S),  3 ERROR(S)
+
+[2022-05-26 14:37:34]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': missing function-prototype
+*** ERROR C267 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': requires ANSI-style prototype
+*** ERROR C195 IN LINE 21 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: '*' illegal indirection
+*** ERROR C195 IN LINE 23 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: '*' illegal indirection
+*** ERROR C195 IN LINE 25 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: '*' illegal indirection
+*** ERROR C195 IN LINE 27 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: '*' illegal indirection
+*** ERROR C231 IN LINE 32 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C231 IN LINE 60 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+C51 COMPILATION COMPLETE.  1 WARNING(S),  7 ERROR(S)
+
+[2022-05-26 14:38:38]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': missing function-prototype
+*** ERROR C267 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': requires ANSI-style prototype
+*** ERROR C231 IN LINE 32 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C231 IN LINE 60 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C202 IN LINE 84 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 86 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'i': undefined identifier
+C51 COMPILATION COMPLETE.  1 WARNING(S),  5 ERROR(S)
+
+[2022-05-26 14:39:02]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': missing function-prototype
+*** ERROR C267 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': requires ANSI-style prototype
+*** ERROR C231 IN LINE 32 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C231 IN LINE 60 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C141 IN LINE 81 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: syntax error near 'int', expected '__asm'
+*** ERROR C202 IN LINE 81 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 85 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 87 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'i': undefined identifier
+C51 COMPILATION COMPLETE.  1 WARNING(S),  7 ERROR(S)
+
+[2022-05-26 14:40:13]	compilation failed at : "f:\Station\EmbedPorj\DCStepMotor\src\gunfire_C51_DCStepMotor_func.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': missing function-prototype
+*** ERROR C267 IN LINE 20 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': requires ANSI-style prototype
+*** ERROR C231 IN LINE 117 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+*** ERROR C231 IN LINE 145 OF .\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.C: 'G_IndependentKey_Scan': redefinition
+C51 COMPILATION COMPLETE.  1 WARNING(S),  3 ERROR(S)
+
+[2022-05-26 14:42:22]	[done]
+	build successfully !
+
+[2022-05-26 14:43:07]	[done]
+	build successfully !
+
+[2022-05-26 14:45:16]	[done]
+	build successfully !
+
+[2022-05-26 14:52:00]	[done]
+	build successfully !
+
+[2022-05-26 14:55:38]	[done]
+	build successfully !
+
+[2022-05-26 15:00:19]	[done]
+	build successfully !
+
+[2022-05-26 15:06:49]	[done]
+	build successfully !
+
+[2022-05-26 15:09:49]	[done]
+	build successfully !
+

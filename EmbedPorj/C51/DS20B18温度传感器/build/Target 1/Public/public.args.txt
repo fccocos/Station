@@ -1,0 +1,1 @@
+.\Public\public.c PRINT(".\build\Target 1\Public\public.lst") OMF2 TABS(4) CODE NOCOND SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(.\App\ds18b20;.\App\msg;.\Public;D:\Keil_v5\C51\INC) DEFINE(__UVISION_VERSION='526') OBJECT(".\build\Target 1\Public\public.o")

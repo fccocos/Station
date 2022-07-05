@@ -1,0 +1,3 @@
+
+.\build\Debug\src\main.o TO .\build\Debug\beef
+PRINT(.\build\Debug\beef.map) REMOVEUNUSED

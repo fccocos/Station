@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/pure_embedding_py.dir/pure_embedding_py.cpp.o  -o pure_embedding_py  /usr/lib/x86_64-linux-gnu/libpython3.8.so 

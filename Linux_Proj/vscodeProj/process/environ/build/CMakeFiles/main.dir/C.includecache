@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/process/environ/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+error.h
+-
+

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Station\Linux_Proj\vscodeProj\cmake\demo01\Message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Station\Linux_Proj\vscodeProj\cmake\demo01\Message.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Station\Linux_Proj\vscodeProj\cmake\demo01\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9CC0BE88-441C-3B8E-810C-8561656D47B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C49C7F4F-B3DE-3316-BCB7-F2CC446884B3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

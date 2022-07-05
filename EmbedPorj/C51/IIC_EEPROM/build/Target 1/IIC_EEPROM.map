@@ -1,0 +1,313 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          05/30/2022  22:44:23  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\build\Target 1\App\24c02\24c02.o, .\build\Target 1\App\iic\iic.o, .\build\Target 1\App\key
+>> \key.o, .\build\Target 1\App\smg\smg.o, .\build\Target 1\Public\public.o, .\build\Target 1\User\main.o TO .\build\Tar
+>> get 1\IIC_EEPROM PRINT (.\build\Target 1\IIC_EEPROM.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\build\Target 1\App\24c02\24c02.o (24C02)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\App\iic\iic.o (IIC)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\App\key\key.o (KEY)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\App\smg\smg.o (SMG)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\Public\public.o (PUBLIC)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\User\main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?COPY)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\build\Target 1\IIC_EEPROM (24C02)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0004C0H   CODE
+I:000000H   I:000000H   I:00007FH   000023H   DATA
+C:000000H   C:000000H   C:00FFFFH   000003H   CONST
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\build\Target 1\IIC_EEPROM (24C02)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000017H   000010H   BYTE   UNIT     DATA           ?DT?SMG
+000018H   000021H   00000AH   BYTE   UNIT     DATA           _DATA_GROUP_
+000022H   000022H   000001H   BYTE   UNIT     DATA           ?DT?KEY
+000023H   000023H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00009FH   00009DH   BYTE   UNIT     CODE           ?PR?_SMG_DISPLAY?SMG
+0000A0H   00011CH   00007DH   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+00011DH   000168H   00004CH   BYTE   UNIT     CODE           ?PR?_KEY_SCAN?KEY
+000169H   0001A9H   000041H   BYTE   UNIT     CODE           ?PR?_IIC_WRITE_BYTE?IIC
+0001AAH   0001E9H   000040H   BYTE   UNIT     CODE           ?PR?_IIC_READ_BYTE?IIC
+0001EAH   000214H   00002BH   BYTE   UNIT     CODE           ?PR?_AT24C02_READ_ONE_BYTE?24C02
+000215H   00023DH   000029H   BYTE   UNIT     CODE           ?PR?_AT24C02_WRITE_ONE_BYTE?24C02
+00023EH   000263H   000026H   BYTE   UNIT     CODE           ?PR?IIC_WAIT_ACK?IIC
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/30/2022  22:44:23  PAGE 2
+
+
+000264H   000287H   000024H   BYTE   UNIT     CODE           ?PR?IIC_START?IIC
+000288H   0002A6H   00001FH   BYTE   UNIT     CODE           ?PR?_DELAY_MS?PUBLIC
+0002A7H   0002C1H   00001BH   BYTE   UNIT     CODE           ?PR?IIC_STOP?IIC
+0002C2H   0002D8H   000017H   BYTE   UNIT     CODE           ?PR?IIC_ACK?IIC
+0002D9H   0002EFH   000017H   BYTE   UNIT     CODE           ?PR?IIC_NACK?IIC
+0002F0H   000305H   000016H   BYTE   UNIT     CODE           ?C_INITSEG
+000306H   000310H   00000BH   BYTE   UNIT     CODE           ?PR?_DELAY_10US?PUBLIC
+000311H   000313H   000003H   BYTE   UNIT     CONST          ?CO?MAIN
+000314H   0007FFH   0004ECH   ---    ---      **GAP**
+000800H   000922H   000123H   BYTE   UNIT     CODE           ?C?LIB_CODE
+000923H   0009BFH   00009DH   ---    ---      **GAP**
+0009C0H   000A4BH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\build\Target 1\IIC_EEPROM (24C02)
+
+
+FUNCTION/MODULE                     BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE         START  STOP  START  STOP
+===========================================================
+?C_C51STARTUP                      ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                          ----- -----  0018H 001CH
+  +--> _KEY_SCAN/KEY
+  +--> _AT24C02_WRITE_ONE_BYTE/24C02
+  +--> _AT24C02_READ_ONE_BYTE/24C02
+  +--> _SMG_DISPLAY/SMG
+
+_KEY_SCAN/KEY                      ----- -----  ----- -----
+  +--> _DELAY_10US/PUBLIC
+
+_DELAY_10US/PUBLIC                 ----- -----  ----- -----
+
+_AT24C02_WRITE_ONE_BYTE/24C02      ----- -----  001DH 001EH
+  +--> IIC_START/IIC
+  +--> _IIC_WRITE_BYTE/IIC
+  +--> IIC_WAIT_ACK/IIC
+  +--> IIC_STOP/IIC
+  +--> _DELAY_MS/PUBLIC
+
+IIC_START/IIC                      ----- -----  ----- -----
+  +--> _DELAY_10US/PUBLIC
+
+_IIC_WRITE_BYTE/IIC                ----- -----  001FH 0020H
+  +--> _DELAY_10US/PUBLIC
+
+IIC_WAIT_ACK/IIC                   ----- -----  001FH 001FH
+  +--> _DELAY_10US/PUBLIC
+  +--> IIC_STOP/IIC
+
+IIC_STOP/IIC                       ----- -----  ----- -----
+  +--> _DELAY_10US/PUBLIC
+
+_DELAY_MS/PUBLIC                   ----- -----  ----- -----
+
+_AT24C02_READ_ONE_BYTE/24C02       ----- -----  001DH 001EH
+  +--> IIC_START/IIC
+  +--> IIC_WAIT_ACK/IIC
+  +--> _IIC_WRITE_BYTE/IIC
+  +--> _IIC_READ_BYTE/IIC
+  +--> IIC_STOP/IIC
+
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/30/2022  22:44:23  PAGE 3
+
+
+_IIC_READ_BYTE/IIC                 ----- -----  001FH 0021H
+  +--> _DELAY_10US/PUBLIC
+  +--> IIC_NACK/IIC
+  +--> IIC_ACK/IIC
+
+IIC_NACK/IIC                       ----- -----  ----- -----
+  +--> _DELAY_10US/PUBLIC
+
+IIC_ACK/IIC                        ----- -----  ----- -----
+  +--> _DELAY_10US/PUBLIC
+
+_SMG_DISPLAY/SMG                   ----- -----  001DH 0021H
+  +--> _DELAY_10US/PUBLIC
+
+?C_INITSEG                         ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\build\Target 1\IIC_EEPROM (24C02)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      010008F6H   CODE     ---       ?C?CLDOPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010008D0H   CODE     ---       ?C?COPY
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000A07H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      010001EAH   CODE     ---       _at24c02_read_one_byte
+      01000215H   CODE     ---       _at24c02_write_one_byte
+      01000306H   CODE     ---       _delay_10us
+      01000288H   CODE     ---       _delay_ms
+      010001AAH   CODE     ---       _iic_read_byte
+      01000169H   CODE     ---       _iic_write_byte
+      0100011DH   CODE     ---       _key_scan
+      01000003H   CODE     ---       _smg_display
+      00000008H   DATA     ---       gsmg_code
+      010002C2H   CODE     ---       iic_ack
+      010002D9H   CODE     ---       iic_nack
+      01000264H   CODE     ---       iic_start
+      010002A7H   CODE     ---       iic_stop
+      0100023EH   CODE     ---       iic_wait_ack
+      010000A0H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\build\Target 1\IIC_EEPROM (24C02)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       24C02
+      010001EAH   PUBLIC    CODE     ---       _at24c02_read_one_byte
+      01000215H   PUBLIC    CODE     ---       _at24c02_write_one_byte
+
+      01000215H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001EAH   BLOCK     CODE     ---       LVL=0
+      010001ECH   BLOCK     CODE     NEAR LAB  LVL=1
+      0000001EH   SYMBOL    DATA     VOID      tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       IIC
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/30/2022  22:44:23  PAGE 4
+
+
+      010002D9H   PUBLIC    CODE     ---       iic_nack
+      010002C2H   PUBLIC    CODE     ---       iic_ack
+      0100023EH   PUBLIC    CODE     ---       iic_wait_ack
+      010001AAH   PUBLIC    CODE     ---       _iic_read_byte
+      01000169H   PUBLIC    CODE     ---       _iic_write_byte
+      010002A7H   PUBLIC    CODE     ---       iic_stop
+      01000264H   PUBLIC    CODE     ---       iic_start
+
+      01000264H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010002A7H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000169H   BLOCK     CODE     ---       LVL=0
+      0100016BH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000020H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001AAH   BLOCK     CODE     ---       LVL=0
+      010001ACH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000020H   SYMBOL    DATA     VOID      i
+      00000021H   SYMBOL    DATA     VOID      receive
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100023EH   BLOCK     CODE     ---       LVL=0
+      0100023EH   BLOCK     CODE     NEAR LAB  LVL=1
+      0000001FH   SYMBOL    DATA     VOID      time_tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010002C2H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010002D9H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       KEY
+      0100011DH   PUBLIC    CODE     ---       _key_scan
+
+      0100011DH   BLOCK     CODE     ---       LVL=0
+      0100011DH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000022H   SYMBOL    DATA     VOID      key
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       SMG
+      00000008H   PUBLIC    DATA     ---       gsmg_code
+      01000003H   PUBLIC    CODE     ---       _smg_display
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000009H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000020H   SYMBOL    DATA     VOID      i
+      00000021H   SYMBOL    DATA     VOID      pos_tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       PUBLIC
+      01000288H   PUBLIC    CODE     ---       _delay_ms
+      01000306H   PUBLIC    CODE     ---       _delay_10us
+
+      01000306H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/30/2022  22:44:23  PAGE 5
+
+
+
+      01000288H   BLOCK     CODE     ---       LVL=0
+      01000288H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000004H   SYMBOL    DATA     VOID      i
+      00000002H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      010000A0H   PUBLIC    CODE     ---       main
+
+      010000A0H   BLOCK     CODE     ---       LVL=0
+      010000A0H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000018H   SYMBOL    DATA     VOID      key_tmp
+      00000019H   SYMBOL    DATA     VOID      save_value
+      0000001AH   SYMBOL    DATA     VOID      save_buf
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?COPY
+      010008D0H   PUBLIC    CODE     ---       ?C?COPY
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      010008F6H   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000A07H   PUBLIC    CODE     ---       ?C_START
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0310H BYTE (38%) *
+******************************************************************************
+
+Program Size: data=36.0 xdata=0 const=3 code=1216
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

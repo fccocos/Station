@@ -1,0 +1,4 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/TCP/TCP_SCSTLock/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/TCP/TCP_SCSTLock/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/TCP/TCP_SCSTLock/build/CMakeFiles/ser.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/TCP/TCP_SCSTLock/build/CMakeFiles/cli.dir

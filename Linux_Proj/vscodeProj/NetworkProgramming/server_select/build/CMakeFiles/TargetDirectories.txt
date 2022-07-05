@@ -1,0 +1,4 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/server_select/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/server_select/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/server_select/build/CMakeFiles/server.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/server_select/build/CMakeFiles/client.dir

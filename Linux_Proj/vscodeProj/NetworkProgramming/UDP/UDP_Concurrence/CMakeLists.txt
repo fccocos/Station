@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+project(UDP_Concurrence)
+add_compile_options(-Wall -g)
+add_executable(serv serv.c)
+add_executable(cli cli.c)

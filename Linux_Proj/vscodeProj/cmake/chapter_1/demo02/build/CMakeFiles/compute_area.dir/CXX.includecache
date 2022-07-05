@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/compute_area.cpp
+geometry_circle.hpp
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_circle.hpp
+geometry_polygon.hpp
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_polygon.hpp
+geometry_rhombus.hpp
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_rhombus.hpp
+geometry_square.hpp
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_square.hpp
+cstdlib
+-
+iostream
+-
+
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_circle.hpp
+
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_polygon.hpp
+
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_rhombus.hpp
+
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/geometry_square.hpp
+

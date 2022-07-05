@@ -1,0 +1,269 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          05/26/2022  15:09:49  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O, .\BUILD\DEBUG\SRC\MAIN.O TO .\BUILD\DEBUG\
+>> DCSTEPMOTOR PRINT (.\build\Debug\DCStepMotor.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\DEBUG\SRC\GUNFIRE_C51_DCSTEPMOTOR_FUNC.O (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CSTPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\DEBUG\DCSTEPMOTOR (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   00022BH   CODE
+I:000000H   I:000000H   I:00007FH   00001CH   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\DEBUG\DCSTEPMOTOR (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000012H   00000BH   BYTE   UNIT     DATA           ?DT?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+000013H   00001BH   000009H   BYTE   UNIT     DATA           _DATA_GROUP_
+00001CH   00001CH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00004EH   00004CH   BYTE   UNIT     CODE           ?PR?_G_INDEPENDENTKEY_SCAN?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+00004FH   000087H   000039H   BYTE   UNIT     CODE           ?PR?G_DCSTEPMOTOR_RUN?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+000088H   0000B2H   00002BH   BYTE   UNIT     CODE           ?PR?G_INDEPENDENTKEY_CONTROL?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+0000B3H   0000DDH   00002BH   BYTE   UNIT     CODE           ?C?LIB_CODE
+0000DEH   000104H   000027H   BYTE   UNIT     CODE           ?PR?G_REVERSE_PLUSES?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+000105H   00012AH   000026H   BYTE   UNIT     CODE           ?PR?_G_SWAP?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+00012BH   000149H   00001FH   BYTE   UNIT     CODE           ?PR?_DELAY_MS?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+00014AH   000157H   00000EH   BYTE   UNIT     CODE           ?PR?G_DCSTEPMOTOR_SPEEDUP?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+000158H   000165H   00000EH   BYTE   UNIT     CODE           ?PR?G_DCSTEPMOTOR_SPEEDDOWN?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+000166H   000173H   00000EH   BYTE   UNIT     CODE           ?C_INITSEG
+000174H   00017EH   00000BH   BYTE   UNIT     CODE           ?PR?_DELAY_10US?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+00017FH   000189H   00000BH   BYTE   UNIT     CODE           ?PR?G_DCSTEPMOTOR_STOP?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+00018AH   000193H   00000AH   BYTE   UNIT     CODE           ?PR?G_DCSTEPMOTOR_INITIAL?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+000194H   00019BH   000008H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+00019CH   00019EH   000003H   BYTE   UNIT     CODE           ?PR?G_DCSTEPMOTOR_REVERSE?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+00019FH   0007FFH   000661H   ---    ---      **GAP**
+000800H   00088BH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/26/2022  15:09:49  PAGE 2
+
+
+   *DEL*:           00000BH   BYTE   UNIT     CODE           ?PR?_SLEEP?GUNFIRE_C51_DCSTEPMOTOR_FUNC
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\DEBUG\DCSTEPMOTOR (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+
+
+FUNCTION/MODULE                                BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE                    START  STOP  START  STOP
+======================================================================
+?C_C51STARTUP                                 ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                                     ----- -----  ----- -----
+  +--> G_DCSTEPMOTOR_INITIAL/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+  +--> G_DCSTEPMOTOR_RUN/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+
+G_DCSTEPMOTOR_INITIAL/GUNFIRE_C51_DCSTEP+     ----- -----  ----- -----
+... MOTOR_FUNC
+
+G_DCSTEPMOTOR_RUN/GUNFIRE_C51_DCSTEPMOTO+     ----- -----  0013H 0014H
+... R_FUNC
+  +--> G_INDEPENDENTKEY_CONTROL/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+  +--> _DELAY_MS/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+
+G_INDEPENDENTKEY_CONTROL/GUNFIRE_C51_DCS+     ----- -----  0015H 0015H
+... TEPMOTOR_FUNC
+  +--> _G_INDEPENDENTKEY_SCAN/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+  +--> G_DCSTEPMOTOR_REVERSE/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+  +--> G_DCSTEPMOTOR_SPEEDUP/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+  +--> G_DCSTEPMOTOR_SPEEDDOWN/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+  +--> G_DCSTEPMOTOR_STOP/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+
+_G_INDEPENDENTKEY_SCAN/GUNFIRE_C51_DCSTE+     ----- -----  ----- -----
+... PMOTOR_FUNC
+  +--> _DELAY_10US/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+
+_DELAY_10US/GUNFIRE_C51_DCSTEPMOTOR_FUNC      ----- -----  ----- -----
+
+G_DCSTEPMOTOR_REVERSE/GUNFIRE_C51_DCSTEP+     ----- -----  ----- -----
+... MOTOR_FUNC
+  +--> G_REVERSE_PLUSES/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+
+G_REVERSE_PLUSES/GUNFIRE_C51_DCSTEPMOTOR+     ----- -----  ----- -----
+... _FUNC
+  +--> _G_SWAP/GUNFIRE_C51_DCSTEPMOTOR_FUNC
+
+_G_SWAP/GUNFIRE_C51_DCSTEPMOTOR_FUNC          ----- -----  0016H 001BH
+
+G_DCSTEPMOTOR_SPEEDUP/GUNFIRE_C51_DCSTEP+     ----- -----  ----- -----
+... MOTOR_FUNC
+
+G_DCSTEPMOTOR_SPEEDDOWN/GUNFIRE_C51_DCST+     ----- -----  ----- -----
+... EPMOTOR_FUNC
+
+G_DCSTEPMOTOR_STOP/GUNFIRE_C51_DCSTEPMOT+     ----- -----  ----- -----
+... OR_FUNC
+
+_DELAY_MS/GUNFIRE_C51_DCSTEPMOTOR_FUNC        ----- -----  ----- -----
+
+?C_INITSEG                                    ----- -----  ----- -----
+
+
+
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/26/2022  15:09:49  PAGE 3
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\DEBUG\DCSTEPMOTOR (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000016H   DATA     BYTE      ?_G_Swap?BYTE
+      010000B3H   CODE     ---       ?C?CLDPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010000CCH   CODE     ---       ?C?CSTPTR
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000847H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01000174H   CODE     ---       _delay_10us
+      0100012BH   CODE     ---       _delay_ms
+      01000105H   CODE     ---       _G_Swap
+*DEL*:00000000H   CODE     ---       _sleep
+      0100018AH   CODE     ---       G_DCStepMotor_Initial
+      0100019CH   CODE     ---       G_DCStepMotor_Reverse
+      0100004FH   CODE     ---       G_DCStepMotor_Run
+      01000158H   CODE     ---       G_DCStepMotor_SpeedDown
+      0100014AH   CODE     ---       G_DCStepMotor_SpeedUp
+      0100017FH   CODE     ---       G_DCStepMotor_Stop
+      01000088H   CODE     ---       G_IndependentKey_Control
+      010000DEH   CODE     ---       G_Reverse_Pluses
+      01000194H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\DEBUG\DCSTEPMOTOR (GUNFIRE_C51_DCSTEPMOTOR_FUNC)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       GUNFIRE_C51_DCSTEPMOTOR_FUNC
+      0100019CH   PUBLIC    CODE     ---       G_DCStepMotor_Reverse
+      01000158H   PUBLIC    CODE     ---       G_DCStepMotor_SpeedDown
+      0100014AH   PUBLIC    CODE     ---       G_DCStepMotor_SpeedUp
+      010000DEH   PUBLIC    CODE     ---       G_Reverse_Pluses
+      0100017FH   PUBLIC    CODE     ---       G_DCStepMotor_Stop
+      0100004FH   PUBLIC    CODE     ---       G_DCStepMotor_Run
+      0100018AH   PUBLIC    CODE     ---       G_DCStepMotor_Initial
+      01000088H   PUBLIC    CODE     ---       G_IndependentKey_Control
+      00000016H   PUBLIC    DATA     BYTE      ?_G_Swap?BYTE
+      01000105H   PUBLIC    CODE     ---       _G_Swap
+      0100012BH   PUBLIC    CODE     ---       _delay_ms
+      01000174H   PUBLIC    CODE     ---       _delay_10us
+
+      01000174H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100012BH   BLOCK     CODE     ---       LVL=0
+      0100012BH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000004H   SYMBOL    DATA     VOID      i
+      00000002H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000105H   BLOCK     CODE     ---       LVL=0
+      0100010BH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000088H   BLOCK     CODE     ---       LVL=0
+      01000088H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000015H   SYMBOL    DATA     VOID      key
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/26/2022  15:09:49  PAGE 4
+
+
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100018AH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100004FH   BLOCK     CODE     ---       LVL=0
+      0100004FH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000013H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100017FH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010000DEH   BLOCK     CODE     ---       LVL=0
+      010000DEH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000006H   SYMBOL    DATA     VOID      i
+      00000005H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100014AH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000158H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100019CH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000003H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000008H   SYMBOL    DATA     VOID      key
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      01000194H   PUBLIC    CODE     ---       main
+
+      01000194H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?CLDPTR
+      010000B3H   PUBLIC    CODE     ---       ?C?CLDPTR
+
+      ---         MODULE    ---      ---       ?C?CSTPTR
+      010000CCH   PUBLIC    CODE     ---       ?C?CSTPTR
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000847H   PUBLIC    CODE     ---       ?C_START
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 017BH BYTE (18%) *
+******************************************************************************
+
+Program Size: data=29.0 xdata=0 const=0 code=555
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

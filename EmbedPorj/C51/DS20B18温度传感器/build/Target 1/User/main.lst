@@ -1,0 +1,493 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\build\Target 1\User\main.o
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.exe .\USER\MAIN.C PRINT(.\build\Target 1\User\main.lst) OMF2 TABS(4) CODE NO
+                    -COND SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(.\App\ds18b20;.\App\msg;.\Public;D:\Keil_v5\C51\INC) DEFINE(__UVI
+                    -SION_VERSION=526) OBJECT(.\build\Target 1\User\main.o)
+
+line level    source
+
+   1          #include "public.h"
+   2          #include "ds18b20.h"
+   3          #include "msg.h"
+   4          
+   5          void main(void)
+   6          {
+   7   1          u8 i = 0;
+   8   1          long tempur = 0;
+   9   1          long dotNumber = 0;
+  10   1          u8 tempur_smg[8];
+  11   1      
+  12   1          ds18b20_init();
+  13   1          while (1)
+  14   1          {
+  15   2              //每隔一段时间获取一次温度值
+  16   2              i++;
+  17   2              if (i % 50 == 0)
+  18   2                  tempur = ds18b20_get_tempurature() * 10000;
+  19   2              if (tempur < 0)
+  20   2              {
+  21   3                  tempur = -tempur;
+  22   3                  tempur_smg[0] = 0x40;
+  23   3              }
+  24   2              else
+  25   2              {
+  26   3                  tempur_smg[0] = 0x00;
+  27   3              }
+  28   2              //获取百位
+  29   2              tempur_smg[1] = gmsg_code[tempur / 1000000];
+  30   2              //获取十位
+  31   2              tempur_smg[2] = gmsg_code[tempur % 1000000 / 100000];
+  32   2              //获取个位
+  33   2              tempur_smg[3] = gmsg_code[tempur % 1000000 % 100000 / 10000] | 0x80;
+  34   2              dotNumber = tempur % 1000000 % 100000 % 10000;
+  35   2              //小数点后一位
+  36   2              tempur_smg[4] = gmsg_code[dotNumber/1000];
+  37   2              //小数点后第二位
+  38   2              tempur_smg[5] = gmsg_code[dotNumber % 1000/100];
+  39   2              //小数点后第三位
+  40   2              tempur_smg[6] = gmsg_code[dotNumber% 1000%100/10];
+  41   2              //小数点后第四位
+  42   2              tempur_smg[7] = gmsg_code[dotNumber% 1000%100%10];
+  43   2              msg_display(tempur_smg, 1);
+  44   2          }
+  45   1      }
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 5
+                                           ; SOURCE LINE # 6
+                                           ; SOURCE LINE # 7
+0000 E4                CLR     A
+0001 F500        R     MOV     i,A
+                                           ; SOURCE LINE # 8
+0003 F500        R     MOV     tempur+03H,A
+0005 F500        R     MOV     tempur+02H,A
+0007 F500        R     MOV     tempur+01H,A
+0009 F500        R     MOV     tempur,A
+                                           ; SOURCE LINE # 9
+000B F500        R     MOV     dotNumber+03H,A
+000D F500        R     MOV     dotNumber+02H,A
+000F F500        R     MOV     dotNumber+01H,A
+0011 F500        R     MOV     dotNumber,A
+                                           ; SOURCE LINE # 12
+0013 120000      E     LCALL   ds18b20_init
+0016         ?C0001:
+                                           ; SOURCE LINE # 13
+                                           ; SOURCE LINE # 14
+                                           ; SOURCE LINE # 16
+0016 0500        R     INC     i
+                                           ; SOURCE LINE # 17
+0018 E500        R     MOV     A,i
+001A 75F032            MOV     B,#032H
+001D 84                DIV     AB
+001E E5F0              MOV     A,B
+0020 7019              JNZ     ?C0003
+                                           ; SOURCE LINE # 18
+0022 120000      E     LCALL   ds18b20_get_tempurature
+0025 7B00              MOV     R3,#00H
+0027 7A40              MOV     R2,#040H
+0029 791C              MOV     R1,#01CH
+002B 7846              MOV     R0,#046H
+002D 120000      E     LCALL   ?C?FPMUL
+0030 120000      E     LCALL   ?C?CASTF
+0033 8F00        R     MOV     tempur+03H,R7
+0035 8E00        R     MOV     tempur+02H,R6
+0037 8D00        R     MOV     tempur+01H,R5
+0039 8C00        R     MOV     tempur,R4
+003B         ?C0003:
+                                           ; SOURCE LINE # 19
+003B AF00        R     MOV     R7,tempur+03H
+003D AE00        R     MOV     R6,tempur+02H
+003F AD00        R     MOV     R5,tempur+01H
+0041 AC00        R     MOV     R4,tempur
+0043 EC                MOV     A,R4
+0044 33                RLC     A
+0045 5010              JNC     ?C0004
+                                           ; SOURCE LINE # 20
+                                           ; SOURCE LINE # 21
+0047 120000      E     LCALL   ?C?LNEG
+004A 8F00        R     MOV     tempur+03H,R7
+004C 8E00        R     MOV     tempur+02H,R6
+004E 8D00        R     MOV     tempur+01H,R5
+0050 8C00        R     MOV     tempur,R4
+                                           ; SOURCE LINE # 22
+0052 750040      R     MOV     tempur_smg,#040H
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 3   
+
+                                           ; SOURCE LINE # 23
+0055 8003              SJMP    ?C0005
+0057         ?C0004:
+                                           ; SOURCE LINE # 25
+                                           ; SOURCE LINE # 26
+0057 E4                CLR     A
+0058 F500        R     MOV     tempur_smg,A
+                                           ; SOURCE LINE # 27
+005A         ?C0005:
+                                           ; SOURCE LINE # 29
+005A 7B40              MOV     R3,#040H
+005C 7A42              MOV     R2,#042H
+005E 790F              MOV     R1,#0FH
+0060 7800              MOV     R0,#00H
+0062 AF00        R     MOV     R7,tempur+03H
+0064 AE00        R     MOV     R6,tempur+02H
+0066 AD00        R     MOV     R5,tempur+01H
+0068 AC00        R     MOV     R4,tempur
+006A 120000      E     LCALL   ?C?SLDIV
+006D 7400        E     MOV     A,#LOW gmsg_code
+006F 2F                ADD     A,R7
+0070 F8                MOV     R0,A
+0071 E6                MOV     A,@R0
+0072 F500        R     MOV     tempur_smg+01H,A
+                                           ; SOURCE LINE # 31
+0074 7B40              MOV     R3,#040H
+0076 7A42              MOV     R2,#042H
+0078 790F              MOV     R1,#0FH
+007A 7800              MOV     R0,#00H
+007C AF00        R     MOV     R7,tempur+03H
+007E AE00        R     MOV     R6,tempur+02H
+0080 AD00        R     MOV     R5,tempur+01H
+0082 AC00        R     MOV     R4,tempur
+0084 120000      E     LCALL   ?C?SLDIV
+0087 AC00              MOV     R4,AR0
+0089 AD01              MOV     R5,AR1
+008B AE02              MOV     R6,AR2
+008D AF03              MOV     R7,AR3
+008F 7BA0              MOV     R3,#0A0H
+0091 7A86              MOV     R2,#086H
+0093 7901              MOV     R1,#01H
+0095 7800              MOV     R0,#00H
+0097 120000      E     LCALL   ?C?SLDIV
+009A 7400        E     MOV     A,#LOW gmsg_code
+009C 2F                ADD     A,R7
+009D F8                MOV     R0,A
+009E E6                MOV     A,@R0
+009F F500        R     MOV     tempur_smg+02H,A
+                                           ; SOURCE LINE # 33
+00A1 7B40              MOV     R3,#040H
+00A3 7A42              MOV     R2,#042H
+00A5 790F              MOV     R1,#0FH
+00A7 7800              MOV     R0,#00H
+00A9 AF00        R     MOV     R7,tempur+03H
+00AB AE00        R     MOV     R6,tempur+02H
+00AD AD00        R     MOV     R5,tempur+01H
+00AF AC00        R     MOV     R4,tempur
+00B1 120000      E     LCALL   ?C?SLDIV
+00B4 AC00              MOV     R4,AR0
+00B6 AD01              MOV     R5,AR1
+00B8 AE02              MOV     R6,AR2
+00BA AF03              MOV     R7,AR3
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 4   
+
+00BC 7BA0              MOV     R3,#0A0H
+00BE 7A86              MOV     R2,#086H
+00C0 7901              MOV     R1,#01H
+00C2 7800              MOV     R0,#00H
+00C4 120000      E     LCALL   ?C?SLDIV
+00C7 AC00              MOV     R4,AR0
+00C9 AD01              MOV     R5,AR1
+00CB AE02              MOV     R6,AR2
+00CD AF03              MOV     R7,AR3
+00CF E4                CLR     A
+00D0 7B10              MOV     R3,#010H
+00D2 7A27              MOV     R2,#027H
+00D4 F9                MOV     R1,A
+00D5 F8                MOV     R0,A
+00D6 120000      E     LCALL   ?C?SLDIV
+00D9 7400        E     MOV     A,#LOW gmsg_code
+00DB 2F                ADD     A,R7
+00DC F8                MOV     R0,A
+00DD E6                MOV     A,@R0
+00DE 4480              ORL     A,#080H
+00E0 F500        R     MOV     tempur_smg+03H,A
+                                           ; SOURCE LINE # 34
+00E2 7B40              MOV     R3,#040H
+00E4 7A42              MOV     R2,#042H
+00E6 790F              MOV     R1,#0FH
+00E8 7800              MOV     R0,#00H
+00EA AF00        R     MOV     R7,tempur+03H
+00EC AE00        R     MOV     R6,tempur+02H
+00EE AD00        R     MOV     R5,tempur+01H
+00F0 AC00        R     MOV     R4,tempur
+00F2 120000      E     LCALL   ?C?SLDIV
+00F5 AC00              MOV     R4,AR0
+00F7 AD01              MOV     R5,AR1
+00F9 AE02              MOV     R6,AR2
+00FB AF03              MOV     R7,AR3
+00FD 7BA0              MOV     R3,#0A0H
+00FF 7A86              MOV     R2,#086H
+0101 7901              MOV     R1,#01H
+0103 7800              MOV     R0,#00H
+0105 120000      E     LCALL   ?C?SLDIV
+0108 AC00              MOV     R4,AR0
+010A AD01              MOV     R5,AR1
+010C AE02              MOV     R6,AR2
+010E AF03              MOV     R7,AR3
+0110 E4                CLR     A
+0111 7B10              MOV     R3,#010H
+0113 7A27              MOV     R2,#027H
+0115 F9                MOV     R1,A
+0116 F8                MOV     R0,A
+0117 120000      E     LCALL   ?C?SLDIV
+011A AC00              MOV     R4,AR0
+011C AD01              MOV     R5,AR1
+011E AE02              MOV     R6,AR2
+0120 AF03              MOV     R7,AR3
+0122 8F00        R     MOV     dotNumber+03H,R7
+0124 8E00        R     MOV     dotNumber+02H,R6
+0126 8D00        R     MOV     dotNumber+01H,R5
+0128 8C00        R     MOV     dotNumber,R4
+                                           ; SOURCE LINE # 36
+012A E4                CLR     A
+012B 7BE8              MOV     R3,#0E8H
+012D 7A03              MOV     R2,#03H
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 5   
+
+012F F9                MOV     R1,A
+0130 F8                MOV     R0,A
+0131 120000      E     LCALL   ?C?SLDIV
+0134 7400        E     MOV     A,#LOW gmsg_code
+0136 2F                ADD     A,R7
+0137 F8                MOV     R0,A
+0138 E6                MOV     A,@R0
+0139 F500        R     MOV     tempur_smg+04H,A
+                                           ; SOURCE LINE # 38
+013B E4                CLR     A
+013C 7BE8              MOV     R3,#0E8H
+013E 7A03              MOV     R2,#03H
+0140 F9                MOV     R1,A
+0141 F8                MOV     R0,A
+0142 AF00        R     MOV     R7,dotNumber+03H
+0144 AE00        R     MOV     R6,dotNumber+02H
+0146 AD00        R     MOV     R5,dotNumber+01H
+0148 AC00        R     MOV     R4,dotNumber
+014A 120000      E     LCALL   ?C?SLDIV
+014D AC00              MOV     R4,AR0
+014F AD01              MOV     R5,AR1
+0151 AE02              MOV     R6,AR2
+0153 AF03              MOV     R7,AR3
+0155 E4                CLR     A
+0156 7B64              MOV     R3,#064H
+0158 FA                MOV     R2,A
+0159 F9                MOV     R1,A
+015A F8                MOV     R0,A
+015B 120000      E     LCALL   ?C?SLDIV
+015E 7400        E     MOV     A,#LOW gmsg_code
+0160 2F                ADD     A,R7
+0161 F8                MOV     R0,A
+0162 E6                MOV     A,@R0
+0163 F500        R     MOV     tempur_smg+05H,A
+                                           ; SOURCE LINE # 40
+0165 E4                CLR     A
+0166 7BE8              MOV     R3,#0E8H
+0168 7A03              MOV     R2,#03H
+016A F9                MOV     R1,A
+016B F8                MOV     R0,A
+016C AF00        R     MOV     R7,dotNumber+03H
+016E AE00        R     MOV     R6,dotNumber+02H
+0170 AD00        R     MOV     R5,dotNumber+01H
+0172 AC00        R     MOV     R4,dotNumber
+0174 120000      E     LCALL   ?C?SLDIV
+0177 AC00              MOV     R4,AR0
+0179 AD01              MOV     R5,AR1
+017B AE02              MOV     R6,AR2
+017D AF03              MOV     R7,AR3
+017F E4                CLR     A
+0180 7B64              MOV     R3,#064H
+0182 FA                MOV     R2,A
+0183 F9                MOV     R1,A
+0184 F8                MOV     R0,A
+0185 120000      E     LCALL   ?C?SLDIV
+0188 AC00              MOV     R4,AR0
+018A AD01              MOV     R5,AR1
+018C AE02              MOV     R6,AR2
+018E AF03              MOV     R7,AR3
+0190 E4                CLR     A
+0191 7B0A              MOV     R3,#0AH
+0193 FA                MOV     R2,A
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 6   
+
+0194 F9                MOV     R1,A
+0195 F8                MOV     R0,A
+0196 120000      E     LCALL   ?C?SLDIV
+0199 7400        E     MOV     A,#LOW gmsg_code
+019B 2F                ADD     A,R7
+019C F8                MOV     R0,A
+019D E6                MOV     A,@R0
+019E F500        R     MOV     tempur_smg+06H,A
+                                           ; SOURCE LINE # 42
+01A0 E4                CLR     A
+01A1 7BE8              MOV     R3,#0E8H
+01A3 7A03              MOV     R2,#03H
+01A5 F9                MOV     R1,A
+01A6 F8                MOV     R0,A
+01A7 AF00        R     MOV     R7,dotNumber+03H
+01A9 AE00        R     MOV     R6,dotNumber+02H
+01AB AD00        R     MOV     R5,dotNumber+01H
+01AD AC00        R     MOV     R4,dotNumber
+01AF 120000      E     LCALL   ?C?SLDIV
+01B2 AC00              MOV     R4,AR0
+01B4 AD01              MOV     R5,AR1
+01B6 AE02              MOV     R6,AR2
+01B8 AF03              MOV     R7,AR3
+01BA E4                CLR     A
+01BB 7B64              MOV     R3,#064H
+01BD FA                MOV     R2,A
+01BE F9                MOV     R1,A
+01BF F8                MOV     R0,A
+01C0 120000      E     LCALL   ?C?SLDIV
+01C3 AC00              MOV     R4,AR0
+01C5 AD01              MOV     R5,AR1
+01C7 AE02              MOV     R6,AR2
+01C9 AF03              MOV     R7,AR3
+01CB E4                CLR     A
+01CC 7B0A              MOV     R3,#0AH
+01CE FA                MOV     R2,A
+01CF F9                MOV     R1,A
+01D0 F8                MOV     R0,A
+01D1 120000      E     LCALL   ?C?SLDIV
+01D4 7400        E     MOV     A,#LOW gmsg_code
+01D6 2B                ADD     A,R3
+01D7 F8                MOV     R0,A
+01D8 E6                MOV     A,@R0
+01D9 F500        R     MOV     tempur_smg+07H,A
+                                           ; SOURCE LINE # 43
+01DB 7B00              MOV     R3,#00H
+01DD 7A00        R     MOV     R2,#HIGH tempur_smg
+01DF 7900        R     MOV     R1,#LOW tempur_smg
+01E1 7D01              MOV     R5,#01H
+01E3 120000      E     LCALL   _msg_display
+                                           ; SOURCE LINE # 44
+01E6 020000      R     LJMP    ?C0001
+             ; FUNCTION main (END)
+
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 7   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+P0 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0080H  1
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+P2 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A0H  1
+P3 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B0H  1
+T0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B4H  1
+AC . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D6H  1
+T1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B5H  1
+T2 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+EA . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AFH  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+EXF2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CEH  1
+RD . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B7H  1
+ES . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ACH  1
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+RI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0098H  1
+INT0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B2H  1
+CY . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D7H  1
+TI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0099H  1
+INT1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B3H  1
+ds18b20_init . . . . . . . . . . . . .  EXTERN   CODE   PROC     -----  -----
+RCAP2H . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CBH  1
+PS . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BCH  1
+SP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0081H  1
+_msg_display . . . . . . . . . . . . .  EXTERN   CODE   PROC     -----  -----
+T2EX . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0091H  1
+OV . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D2H  1
+RCAP2L . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CAH  1
+main . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  i. . . . . . . . . . . . . . . . . .  AUTO     DATA   U_CHAR   0000H  1
+  tempur . . . . . . . . . . . . . . .  AUTO     DATA   LONG     0001H  4
+  dotNumber. . . . . . . . . . . . . .  AUTO     DATA   LONG     0005H  4
+  tempur_smg . . . . . . . . . . . . .  AUTO     DATA   ARRAY    0009H  8
+C_T2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C9H  1
+WR . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B6H  1
+u8 . . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+RCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CDH  1
+gmsg_code. . . . . . . . . . . . . . .  EXTERN   DATA   ARRAY    -----  17
+TCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CCH  1
+SBUF . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0099H  1
+PCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0087H  1
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+TMOD . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0089H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+IE0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0089H  1
+IE1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008BH  1
+B. . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F0H  1
+CP_RL2 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C8H  1
+ACC. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E0H  1
+ET0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A9H  1
+ET1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ABH  1
+TF0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008DH  1
+ET2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ADH  1
+TF1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008FH  1
+TF2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CFH  1
+RB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009AH  1
+TH0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008CH  1
+EX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
+C51 COMPILER V9.60.0.0   MAIN                                                              05/31/2022 19:23:56 PAGE 8   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+IT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0088H  1
+TH1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008DH  1
+TB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009BH  1
+EX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AAH  1
+IT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008AH  1
+TH2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CDH  1
+P. . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D0H  1
+ds18b20_get_tempurature. . . . . . . .  EXTERN   CODE   PROC     -----  -----
+SM0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009FH  1
+TL0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008AH  1
+SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
+TL1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008BH  1
+SM2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009DH  1
+TL2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CCH  1
+PT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B9H  1
+PT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BBH  1
+RS0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D3H  1
+PT2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
+TR0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008CH  1
+RS1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D4H  1
+TR1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008EH  1
+TR2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CAH  1
+PX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B8H  1
+PX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BAH  1
+u16. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
+LSA. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A2H  1
+DPL. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0082H  1
+LSB. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A3H  1
+LSC. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A4H  1
+EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
+REN. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009CH  1
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+RXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B0H  1
+TXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B1H  1
+DS18B20_BUS. . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B7H  1
+F0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D5H  1
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    489    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      17
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

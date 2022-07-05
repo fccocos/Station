@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file alias="avatar">image/git_avatar.png</file>
-    </qresource>
-</RCC>

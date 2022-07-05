@@ -50,6 +50,7 @@ writeFile(const char *filename, const char *buf, size_t bufSize, int nflags1, in
 
 int main(int argc, char *argv[])
 {
+    //防止重定义
 #ifndef BUF_SIZE
 #define BUF_SIZE 4096
 #endif

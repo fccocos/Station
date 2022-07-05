@@ -1,0 +1,69 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 15:09:49 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\build\Debug\src\main.o
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.exe .\SRC\MAIN.C PRINT(.\build\Debug\src\main.lst) OMF2 TABS(4) CODE NOCOND 
+                    -SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(.\..\..\custom_include;D:\Keil_v5\C51\INC;.\src;.\inc) DEFINE(__UVISIO
+                    -N_VERSION=526) OBJECT(.\build\Debug\src\main.o)
+
+line level    source
+
+   1          #include "gunfire_C51_DCStepMotor_func.h"
+   2          
+   3          void main(void)
+   4          {   
+   5   1          G_DCStepMotor_Initial();
+   6   1          while(1)
+   7   1          {
+   8   2              G_DCStepMotor_Run();
+   9   2          }
+  10   1          
+  11   1          
+  12   1      }
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 15:09:49 PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 3
+                                           ; SOURCE LINE # 4
+                                           ; SOURCE LINE # 5
+0000 120000      E     LCALL   G_DCStepMotor_Initial
+0003         ?C0001:
+                                           ; SOURCE LINE # 6
+                                           ; SOURCE LINE # 7
+                                           ; SOURCE LINE # 8
+0003 120000      E     LCALL   G_DCStepMotor_Run
+                                           ; SOURCE LINE # 9
+0006 80FB              SJMP    ?C0001
+             ; FUNCTION main (END)
+
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 15:09:49 PAGE 3   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+G_DCStepMotor_Initial. . . . . . . . .  EXTERN   CODE   PROC     -----  -----
+main . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+G_DCStepMotor_Run. . . . . . . . . . .  EXTERN   CODE   PROC     -----  -----
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =      8    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

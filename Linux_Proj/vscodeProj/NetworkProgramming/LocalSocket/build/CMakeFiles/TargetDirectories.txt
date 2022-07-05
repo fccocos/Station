@@ -1,0 +1,4 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/LocalSocket/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/LocalSocket/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/LocalSocket/build/CMakeFiles/proB.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/LocalSocket/build/CMakeFiles/proA.dir

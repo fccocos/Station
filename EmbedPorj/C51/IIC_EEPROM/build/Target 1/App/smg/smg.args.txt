@@ -1,0 +1,1 @@
+.\App\smg\smg.c PRINT(".\build\Target 1\App\smg\smg.lst") OMF2 TABS(4) CODE NOCOND SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(D:/Keil_v5/C51/INC/Atmel;.\App\24c02;.\Public;.\App\iic;.\App\key;.\App\smg;D:\Keil_v5\C51\INC) DEFINE(__UVISION_VERSION='526') OBJECT(".\build\Target 1\App\smg\smg.o")

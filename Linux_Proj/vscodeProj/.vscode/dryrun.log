@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/f/Station/Linux_Proj/vscodeProj'
+make: Leaving directory '/mnt/f/Station/Linux_Proj/vscodeProj'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

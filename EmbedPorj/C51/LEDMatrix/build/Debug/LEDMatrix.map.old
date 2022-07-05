@@ -1,0 +1,151 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          05/26/2022  06:00:45  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\DEBUG\SRC\MAIN.O TO .\BUILD\DEBUG\LEDMATRIX PRINT (.\build\Debug\LEDMatrix.map) REMO
+>> VEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\DEBUG\LEDMATRIX (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000159H   CODE
+I:000000H   I:000000H   I:00007FH   000021H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\DEBUG\LEDMATRIX (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00001FH   000018H   BYTE   UNIT     DATA           ?DT?MAIN
+000020H   000020H   000001H   BYTE   UNIT     DATA           _DATA_GROUP_
+000021H   000021H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00005FH   00005DH   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+000060H   0000A0H   000041H   BYTE   UNIT     CODE           ?PR?_HC595_WRITE?MAIN
+0000A1H   0000BDH   00001DH   BYTE   UNIT     CODE           ?C_INITSEG
+0000BEH   0000CCH   00000FH   BYTE   UNIT     CODE           ?PR?_DELAY_10US?MAIN
+0000CDH   0007FFH   000733H   ---    ---      **GAP**
+000800H   00088BH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           00000BH   BYTE   UNIT     CODE           ?PR?_SLEEP?MAIN
+   *DEL*:           00001FH   BYTE   UNIT     CODE           ?PR?_DELAY_MS?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\DEBUG\LEDMATRIX (MAIN)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                   ----- -----  0020H 0020H
+  +--> _HC595_WRITE/MAIN
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/26/2022  06:00:45  PAGE 2
+
+
+
+_HC595_WRITE/MAIN           ----- -----  ----- -----
+  +--> _DELAY_10US/MAIN
+
+_DELAY_10US/MAIN            ----- -----  ----- -----
+
+?C_INITSEG                  ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\DEBUG\LEDMATRIX (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000847H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      010000C2H   CODE     ---       _delay_10us
+*DEL*:00000000H   CODE     ---       _delay_ms
+      01000070H   CODE     ---       _hc595_write
+*DEL*:00000000H   CODE     ---       _sleep
+      01000003H   CODE     ---       main
+      00000018H   DATA     ---       words_lib_col
+      00000008H   DATA     ---       words_lib_row
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\DEBUG\LEDMATRIX (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      00000018H   PUBLIC    DATA     ---       words_lib_col
+      00000008H   PUBLIC    DATA     ---       words_lib_row
+      01000003H   PUBLIC    CODE     ---       main
+      01000070H   PUBLIC    CODE     ---       _hc595_write
+      010000C2H   PUBLIC    CODE     ---       _delay_10us
+
+      010000BEH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010000C2H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+      00000004H   SYMBOL    DATA     VOID      i
+      00000002H   SYMBOL    DATA     VOID      j
+
+      01000060H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000070H   BLOCK     CODE     ---       LVL=0
+      01000072H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000002H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000003H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000001H   SYMBOL    DATA     VOID      j
+      00000020H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/26/2022  06:00:45  PAGE 3
+
+
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000847H   PUBLIC    CODE     ---       ?C_START
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00F3H BYTE (11%) *
+******************************************************************************
+
+Program Size: data=34.0 xdata=0 const=0 code=345
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo03/build/CMakeFiles/processor-info.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo03/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo03/build/CMakeFiles/rebuild_cache.dir

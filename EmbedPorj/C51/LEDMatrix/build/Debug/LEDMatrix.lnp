@@ -1,0 +1,3 @@
+
+.\build\Debug\src\main.o TO .\build\Debug\LEDMatrix
+PRINT(.\build\Debug\LEDMatrix.map) REMOVEUNUSED

@@ -1,0 +1,186 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          05/25/2022  19:47:04  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\DEBUG\SRC\MAIN.O TO .\BUILD\DEBUG\TEST PRINT (.\build\Debug\test.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (PRINTF)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CSTPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?PLDIIDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CCASE)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (PUTCHAR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\DEBUG\TEST (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   00043BH   CODE
+C:000000H   C:000000H   C:00FFFFH   00000EH   CONST
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   00001CH   DATA
+I:000020H.0 I:000020H.0 I:00002FH.7 000001H.1 BIT
+
+
+MEMORY MAP OF MODULE:  .\BUILD\DEBUG\TEST (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00001BH   000014H   BYTE   UNIT     DATA           _DATA_GROUP_
+00001CH.0 00001FH.7 000004H.0 ---    ---      **GAP**
+000020H.0 000021H.0 000001H.1 BIT    UNIT     BIT            _BIT_GROUP_
+000021H.1 000021H   000000H.7 ---    ---      **GAP**
+000022H   000022H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000090H   00008EH   BYTE   UNIT     CODE           ?C?LIB_CODE
+000091H   0000B7H   000027H   BYTE   UNIT     CODE           ?PR?PUTCHAR?PUTCHAR
+0000B8H   0000C7H   000010H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0000C8H   0000D2H   00000BH   BYTE   UNIT     CODE           ?PR?_SLEEP?MAIN
+0000D3H   0000E0H   00000EH   BYTE   UNIT     CONST          ?CO?MAIN
+0000E1H   0007FFH   00071FH   ---    ---      **GAP**
+000800H   000B5BH   00035CH   BYTE   UNIT     CODE           ?PR?PRINTF?PRINTF
+000B5CH   000C20H   0000C5H   ---    ---      **GAP**
+000C21H   000C2CH   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/25/2022  19:47:04  PAGE 2
+
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           00000BH   BYTE   UNIT     CODE           ?PR?_DELAY_10US?MAIN
+   *DEL*:           00001FH   BYTE   UNIT     CODE           ?PR?_DELAY_MS?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\DEBUG\TEST (MAIN)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> PRINTF/PRINTF
+  +--> _SLEEP/MAIN
+
+PRINTF/PRINTF               20H.0 21H.0  0008H 001BH
+  +--> PUTCHAR/PUTCHAR
+
+PUTCHAR/PUTCHAR             ----- -----  ----- -----
+
+_SLEEP/MAIN                 ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\DEBUG\TEST (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000008H   DATA     ---       ?_PRINTF517?BYTE
+      00000008H   DATA     ---       ?_PRINTF?BYTE
+      00000008H   DATA     ---       ?_SPRINTF517?BYTE
+      00000008H   DATA     ---       ?_SPRINTF?BYTE
+      0100006BH   CODE     ---       ?C?CCASE
+      0100001CH   CODE     ---       ?C?CLDOPTR
+      01000003H   CODE     ---       ?C?CLDPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      01000049H   CODE     ---       ?C?CSTPTR
+      0100005BH   CODE     ---       ?C?PLDIIDATA
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      010000B8H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+*DEL*:00000000H   CODE     ---       _delay_10us
+*DEL*:00000000H   CODE     ---       _delay_ms
+      01000862H   CODE     ---       _PRINTF
+      01000862H   CODE     ---       _PRINTF517
+      01000091H   CODE     ---       _PUTCHAR
+      010000C8H   CODE     ---       _sleep
+      0100085CH   CODE     ---       _SPRINTF
+      0100085CH   CODE     ---       _SPRINTF517
+      010000B8H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\DEBUG\TEST (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      010000B8H   PUBLIC    CODE     ---       main
+      010000C8H   PUBLIC    CODE     ---       _sleep
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/25/2022  19:47:04  PAGE 3
+
+
+
+      010000C8H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+      00000004H   SYMBOL    DATA     VOID      i
+      00000002H   SYMBOL    DATA     VOID      j
+
+      010000B8H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       PRINTF
+      00000008H   PUBLIC    DATA     ---       ?_PRINTF517?BYTE
+      00000008H   PUBLIC    DATA     ---       ?_PRINTF?BYTE
+      00000008H   PUBLIC    DATA     ---       ?_SPRINTF517?BYTE
+      00000008H   PUBLIC    DATA     ---       ?_SPRINTF?BYTE
+      01000862H   PUBLIC    CODE     ---       _PRINTF
+      01000862H   PUBLIC    CODE     ---       _PRINTF517
+      0100085CH   PUBLIC    CODE     ---       _SPRINTF
+      0100085CH   PUBLIC    CODE     ---       _SPRINTF517
+
+      ---         MODULE    ---      ---       ?C?CLDPTR
+      01000003H   PUBLIC    CODE     ---       ?C?CLDPTR
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      0100001CH   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?CSTPTR
+      01000049H   PUBLIC    CODE     ---       ?C?CSTPTR
+
+      ---         MODULE    ---      ---       ?C?PLDIIDATA
+      0100005BH   PUBLIC    CODE     ---       ?C?PLDIIDATA
+
+      ---         MODULE    ---      ---       ?C?CCASE
+      0100006BH   PUBLIC    CODE     ---       ?C?CCASE
+
+      ---         MODULE    ---      ---       PUTCHAR
+      01000091H   PUBLIC    CODE     ---       _PUTCHAR
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0053H BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=30.1 xdata=0 const=14 code=1083
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

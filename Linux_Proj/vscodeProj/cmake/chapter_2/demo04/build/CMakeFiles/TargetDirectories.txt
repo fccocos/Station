@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo04/build/CMakeFiles/linear-algebra-optimaze.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo04/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo04/build/CMakeFiles/rebuild_cache.dir

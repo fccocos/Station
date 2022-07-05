@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Icon/add.png</file>
+        <file>Icon/addFloder.png</file>
+        <file>Icon/all_noselects.png</file>
+        <file>Icon/bold.png</file>
+        <file>Icon/check.png</file>
+        <file>Icon/clear.png</file>
+        <file>Icon/copy.png</file>
+        <file>Icon/cut.png</file>
+        <file>Icon/delete.png</file>
+        <file>Icon/delete-fill.png</file>
+        <file>Icon/exit.png</file>
+        <file>Icon/fit-height.png</file>
+        <file>Icon/fit-width.png</file>
+        <file>Icon/Float.png</file>
+        <file>Icon/fontset.png</file>
+        <file>Icon/initialization.png</file>
+        <file>Icon/insert.png</file>
+        <file>Icon/italic.png</file>
+        <file>Icon/logo.ico</file>
+        <file>Icon/logo.png</file>
+        <file>Icon/newdirection.png</file>
+        <file>Icon/newfile.png</file>
+        <file>Icon/openfile.png</file>
+        <file>Icon/options.png</file>
+        <file>Icon/paste.png</file>
+        <file>Icon/save.png</file>
+        <file>Icon/select-all.png</file>
+        <file>Icon/selectInvs.png</file>
+        <file>Icon/set.png</file>
+        <file>Icon/underline.png</file>
+        <file>Icon/visible.png</file>
+        <file>Icon/zoom in.png</file>
+        <file>Icon/zoom out.png</file>
+        <file>Icon/zoom.png</file>
+        <file>Icon/scan.png</file>
+        <file>Icon/folder.png</file>
+        <file>Icon/open.png</file>
+        <file>Icon/png.png</file>
+    </qresource>
+</RCC>

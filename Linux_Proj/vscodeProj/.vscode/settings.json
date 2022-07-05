@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "*.in": "cpp"
+        "*.in": "cpp",
+        "iostream": "cpp",
+        "types.h": "c",
+        "msg.h": "c",
+        "ipc.h": "c",
+        "msq.h": "c"
     },
+    "C_Cpp.errorSquiggles": "Enabled",
 }

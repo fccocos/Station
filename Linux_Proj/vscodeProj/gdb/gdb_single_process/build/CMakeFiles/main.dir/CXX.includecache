@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/gdb/String.cpp
+String.h
+/mnt/f/Station/Linux_Proj/vscodeProj/gdb/String.h
+cstring
+-
+iostream
+-
+
+/mnt/f/Station/Linux_Proj/vscodeProj/gdb/String.h
+ostream
+-
+istream
+-
+

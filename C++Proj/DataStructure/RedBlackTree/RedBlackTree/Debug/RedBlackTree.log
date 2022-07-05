@@ -1,4 +1,18 @@
 ﻿  main.cpp
-main.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >(void)" (??0?$RBTree@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAE@XZ)，函数 _main 中引用了该符号
-main.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::~RBTree<int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >(void)" (??1?$RBTree@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAE@XZ)，函数 _main 中引用了该符号
-F:\Station\C++Proj\DataStructure\RedBlackTree\Debug\RedBlackTree.exe : fatal error LNK1120: 2 个无法解析的外部命令
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(942,17): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(873): message : 在编译 类 模板 成员函数“void RBTree<int,std::string>::fixUpUnbalancedNode(RBTree<int,std::string>::RBNode *)”时
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(410): message : 查看对正在编译的函数 模板 实例化“void RBTree<int,std::string>::fixUpUnbalancedNode(RBTree<int,std::string>::RBNode *)”的引用
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(6): message : 在编译 类 模板 成员函数“RBTree<int,std::string>::RBTree(void)”时
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\main.cpp(10): message : 查看对正在编译的函数 模板 实例化“RBTree<int,std::string>::RBTree(void)”的引用
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\main.cpp(10): message : 查看对正在编译的 类 模板 实例化“RBTree<int,std::string>”的引用
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(943,17): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(967,17): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(986,18): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(1006,18): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(1096,17): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(1097,17): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(1121,17): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(1140,18): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(1160,18): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+F:\Station\C++Proj\DataStructure\RedBlackTree\RedBlackTree\RBTree.hpp(603): warning C4715: “RBTree<int,std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::remove”: 不是所有的控件路径都返回值
+  RedBlackTree.vcxproj -> F:\Station\C++Proj\DataStructure\RedBlackTree\Debug\RedBlackTree.exe

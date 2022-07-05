@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/execve.dir/execve.c.o  -o execve 

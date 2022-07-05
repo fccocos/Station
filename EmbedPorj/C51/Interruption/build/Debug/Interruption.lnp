@@ -1,0 +1,3 @@
+
+.\build\Debug\src\main.o TO .\build\Debug\Interruption
+PRINT(.\build\Debug\Interruption.map) REMOVEUNUSED

@@ -1,0 +1,2 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/01_FindPython/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/01_FindPython/build/CMakeFiles/edit_cache.dir

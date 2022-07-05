@@ -1,0 +1,427 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\build\Debug\src\main.o
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.exe .\SRC\MAIN.C PRINT(.\build\Debug\src\main.lst) OMF2 TABS(4) CODE NOCOND 
+                    -SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(.\..\..\custom_include;D:\Keil_v5\C51\INC;.\src;.\inc) DEFINE(__UVISIO
+                    -N_VERSION=526) OBJECT(.\build\Debug\src\main.o)
+
+line level    source
+
+   1          #include <gunfire_condefine.h>
+   2          
+   3          void hc595_write(gu8 dat)
+   4          {
+   5   1          int i;
+   6   1          for (i = 0; i < 8; i++)
+   7   1          {
+   8   2              GUNFIRE_HC595_SER = dat >> 7;
+   9   2              dat <<= 1;
+  10   2              GUNFIRE_HC595_SRCLK = 0;
+  11   2              delay_10us(1);
+  12   2              GUNFIRE_HC595_SRCLK = 1;
+  13   2              delay_10us(1);
+  14   2          }
+  15   1          GUNFIRE_HC595_RCLK = 0;
+  16   1          delay_10us(1);
+  17   1          GUNFIRE_HC595_RCLK = 1;
+  18   1      }
+  19          
+  20          gu8 words_lib_row[][8] = {
+  21              //行
+  22              // {0x00, 0x7C, 0x82, 0x82, 0x82, 0x7C, 0x00, 0x00},  // 0
+  23              // {0x30, 0x48, 0x44, 0x22, 0x44, 0x48, 0x30, 0x00},//love
+  24              {0x10, 0x32, 0x55, 0xFF, 0x10, 0xFE, 0x15, 0x53}, //我
+  25              {0x30, 0x48, 0x44, 0x22, 0x44, 0x48, 0x30, 0x00}, // love
+  26              {0x20, 0x7F, 0xA0, 0x44, 0xC9, 0x7F, 0x48, 0x74}, //你
+  27              {0x38, 0x28, 0x28, 0xFF, 0x28, 0x28, 0x38, 0x00}, //中
+  28              {0xFF, 0x85, 0xD5, 0xFD, 0xD5, 0x8D, 0xFF, 0x00}  //国
+  29          };
+  30          gu8 words_lib_col[][8] = {
+  31              //列
+  32              {0x7f, 0xbf, 0xdf, 0xef, 0xf7, 0xfb, 0xfd, 0xfe}};
+  33          
+  34          int main()
+  35          {
+  36   1          gu8 j, i, k;
+  37   1          GUNFIRE_LED_MAXTRIX_K = 0x00;
+  38   1          while (1)
+  39   1          {
+  40   2              for (k = 0; k < 5; k++)
+  41   2                  for (i = 0; i < 50; i++)
+  42   2                      for (j = 0; j < 8; ++j)
+  43   2                      {
+  44   3                          GUNFIRE_LED_MAXTRIX_K = words_lib_col[0][j];
+  45   3                          hc595_write(words_lib_row[k][j]);
+  46   3                          delay_10us(100);
+  47   3                          hc595_write(0x00);
+  48   3                      }
+  49   2          }
+  50   1      }
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION _sleep (BEGIN)
+                                           ; SOURCE LINE # 39
+;---- Variable 'timeout' assigned to Register 'R6/R7' ----
+                                           ; SOURCE LINE # 40
+0000         ?C0001:
+                                           ; SOURCE LINE # 41
+0000 EF                MOV     A,R7
+0001 1F                DEC     R7
+0002 AC06              MOV     R4,AR6
+0004 7001              JNZ     ?C0030
+0006 1E                DEC     R6
+0007         ?C0030:
+0007 4C                ORL     A,R4
+0008 70F6              JNZ     ?C0001
+                                           ; SOURCE LINE # 42
+000A 22                RET     
+             ; FUNCTION _sleep (END)
+
+             ; FUNCTION L?0035 (BEGIN)
+0000         L?0036:
+0000 7F01              MOV     R7,#01H
+0002 7E00              MOV     R6,#00H
+             ; FUNCTION _delay_10us (BEGIN)
+                                           ; SOURCE LINE # 43
+;---- Variable 'ten_us' assigned to Register 'R6/R7' ----
+                                           ; SOURCE LINE # 44
+0004         ?C0004:
+                                           ; SOURCE LINE # 45
+0004 EF                MOV     A,R7
+0005 1F                DEC     R7
+0006 AC06              MOV     R4,AR6
+0008 7001              JNZ     ?C0031
+000A 1E                DEC     R6
+000B         ?C0031:
+000B 4C                ORL     A,R4
+000C 70F6              JNZ     ?C0004
+                                           ; SOURCE LINE # 46
+000E 22                RET     
+             ; FUNCTION _delay_10us (END)
+
+             ; FUNCTION _delay_ms (BEGIN)
+                                           ; SOURCE LINE # 48
+;---- Variable 'ms' assigned to Register 'R6/R7' ----
+                                           ; SOURCE LINE # 49
+                                           ; SOURCE LINE # 51
+;---- Variable 'i' assigned to Register 'R4/R5' ----
+0000 E4                CLR     A
+0001 FD                MOV     R5,A
+0002 FC                MOV     R4,A
+0003         ?C0007:
+0003 C3                CLR     C
+0004 ED                MOV     A,R5
+0005 9F                SUBB    A,R7
+0006 EC                MOV     A,R4
+0007 9E                SUBB    A,R6
+0008 5014              JNC     ?C0013
+                                           ; SOURCE LINE # 52
+;---- Variable 'j' assigned to Register 'R2/R3' ----
+000A 7B6E              MOV     R3,#06EH
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 3   
+
+000C 7A00              MOV     R2,#00H
+000E         ?C0010:
+000E EB                MOV     A,R3
+000F 1B                DEC     R3
+0010 7001              JNZ     ?C0032
+0012 1A                DEC     R2
+0013         ?C0032:
+0013 EB                MOV     A,R3
+0014 4A                ORL     A,R2
+0015 70F7              JNZ     ?C0010
+0017         ?C0009:
+0017 0D                INC     R5
+0018 BD0001            CJNE    R5,#00H,?C0033
+001B 0C                INC     R4
+001C         ?C0033:
+001C 80E5              SJMP    ?C0007
+                                           ; SOURCE LINE # 53
+001E         ?C0013:
+001E 22                RET     
+             ; FUNCTION _delay_ms (END)
+
+             ; FUNCTION _hc595_write (BEGIN)
+                                           ; SOURCE LINE # 3
+;---- Variable 'dat' assigned to Register 'R5' ----
+0000 AD07              MOV     R5,AR7
+                                           ; SOURCE LINE # 4
+                                           ; SOURCE LINE # 6
+;---- Variable 'i' assigned to Register 'R2/R3' ----
+0002 E4                CLR     A
+0003 FB                MOV     R3,A
+0004 FA                MOV     R2,A
+0005         ?C0014:
+                                           ; SOURCE LINE # 7
+                                           ; SOURCE LINE # 8
+0005 ED                MOV     A,R5
+0006 C4                SWAP    A
+0007 13                RRC     A
+0008 13                RRC     A
+0009 13                RRC     A
+000A 5401              ANL     A,#01H
+000C 24FF              ADD     A,#0FFH
+000E 92B4              MOV     GUNFIRE_HC595_SER,C
+                                           ; SOURCE LINE # 9
+0010 ED                MOV     A,R5
+0011 25E0              ADD     A,ACC
+0013 FD                MOV     R5,A
+                                           ; SOURCE LINE # 10
+0014 C2B6              CLR     GUNFIRE_HC595_SRCLK
+                                           ; SOURCE LINE # 11
+0016 120000      R     LCALL   L?0035
+                                           ; SOURCE LINE # 12
+0019 D2B6              SETB    GUNFIRE_HC595_SRCLK
+                                           ; SOURCE LINE # 13
+001B 120000      R     LCALL   L?0035
+                                           ; SOURCE LINE # 14
+001E 0B                INC     R3
+001F BB0001            CJNE    R3,#00H,?C0034
+0022 0A                INC     R2
+0023         ?C0034:
+0023 EB                MOV     A,R3
+0024 6408              XRL     A,#08H
+0026 4A                ORL     A,R2
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 4   
+
+0027 70DC              JNZ     ?C0014
+0029         ?C0015:
+                                           ; SOURCE LINE # 15
+0029 C2B5              CLR     GUNFIRE_HC595_RCLK
+                                           ; SOURCE LINE # 16
+002B 120000      R     LCALL   L?0036
+                                           ; SOURCE LINE # 17
+002E D2B5              SETB    GUNFIRE_HC595_RCLK
+                                           ; SOURCE LINE # 18
+0030 22                RET     
+             ; FUNCTION _hc595_write (END)
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 34
+                                           ; SOURCE LINE # 35
+                                           ; SOURCE LINE # 37
+0000 E4                CLR     A
+0001 F580              MOV     P0,A
+0003         ?C0018:
+                                           ; SOURCE LINE # 38
+                                           ; SOURCE LINE # 39
+                                           ; SOURCE LINE # 40
+0003 E4                CLR     A
+0004 F500        R     MOV     k,A
+0006         ?C0020:
+0006 C3                CLR     C
+0007 E500        R     MOV     A,k
+0009 9405              SUBB    A,#05H
+000B 7480              MOV     A,#080H
+000D 9480              SUBB    A,#080H
+000F 50F2              JNC     ?C0018
+                                           ; SOURCE LINE # 41
+0011 E4                CLR     A
+0012 F500        R     MOV     i,A
+0014         ?C0023:
+0014 C3                CLR     C
+0015 E500        R     MOV     A,i
+0017 9432              SUBB    A,#032H
+0019 7480              MOV     A,#080H
+001B 9480              SUBB    A,#080H
+001D 5035              JNC     ?C0022
+                                           ; SOURCE LINE # 42
+;---- Variable 'j' assigned to Register 'R1' ----
+001F E4                CLR     A
+0020 F9                MOV     R1,A
+0021         ?C0026:
+0021 E9                MOV     A,R1
+0022 C3                CLR     C
+0023 9408              SUBB    A,#08H
+0025 7480              MOV     A,#080H
+0027 9480              SUBB    A,#080H
+0029 5025              JNC     ?C0025
+                                           ; SOURCE LINE # 43
+                                           ; SOURCE LINE # 44
+002B 7400        R     MOV     A,#LOW words_lib_col
+002D 29                ADD     A,R1
+002E F8                MOV     R0,A
+002F E6                MOV     A,@R0
+0030 F580              MOV     P0,A
+                                           ; SOURCE LINE # 45
+0032 E500        R     MOV     A,k
+0034 75F008            MOV     B,#08H
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 5   
+
+0037 A4                MUL     AB
+0038 2400        R     ADD     A,#LOW words_lib_row
+003A 29                ADD     A,R1
+003B F8                MOV     R0,A
+003C E6                MOV     A,@R0
+003D FF                MOV     R7,A
+003E 120000      R     LCALL   _hc595_write
+                                           ; SOURCE LINE # 46
+0041 7F64              MOV     R7,#064H
+0043 7E00              MOV     R6,#00H
+0045 120000      R     LCALL   _delay_10us
+                                           ; SOURCE LINE # 47
+0048 E4                CLR     A
+0049 FF                MOV     R7,A
+004A 120000      R     LCALL   _hc595_write
+                                           ; SOURCE LINE # 48
+004D 09                INC     R1
+004E 80D1              SJMP    ?C0026
+0050         ?C0025:
+0050 0500        R     INC     i
+0052 80C0              SJMP    ?C0023
+0054         ?C0022:
+0054 0500        R     INC     k
+0056 80AE              SJMP    ?C0020
+             ; FUNCTION main (END)
+
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 6   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+_hc595_write . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  dat. . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0005H  1
+  i. . . . . . . . . . . . . . . . . .  * REG *  DATA   INT      0002H  2
+P0 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0080H  1
+GUNFIRE_indpendentKey1 . . . . . . . .  ABSBIT   -----  BIT      00B1H  1
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+GUNFIRE_indpendentKey2 . . . . . . . .  ABSBIT   -----  BIT      00B0H  1
+P2 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A0H  1
+GUNFIRE_indpendentKey3 . . . . . . . .  ABSBIT   -----  BIT      00B2H  1
+P3 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B0H  1
+GUNFIRE_indpendentKey4 . . . . . . . .  ABSBIT   -----  BIT      00B3H  1
+T0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B4H  1
+AC . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D6H  1
+GUNFIRE_HC595_SRCLK. . . . . . . . . .  ABSBIT   -----  BIT      00B6H  1
+T1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B5H  1
+words_lib_row. . . . . . . . . . . . .  PUBLIC   DATA   ARRAY    0000H  40
+T2 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+EA . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AFH  1
+GUNFIRE_DT_SegSelection_A0 . . . . . .  ABSBIT   -----  BIT      00A2H  1
+GUNFIRE_DT_SegSelection_A1 . . . . . .  ABSBIT   -----  BIT      00A3H  1
+GUNFIRE_DT_SegSelection_A2 . . . . . .  ABSBIT   -----  BIT      00A4H  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+GUNFIRE_beep . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A5H  1
+gs8. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+gu8. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+EXF2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CEH  1
+RD . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B7H  1
+ES . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ACH  1
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+RI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0098H  1
+_sleep . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  timeout. . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+INT0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B2H  1
+CY . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D7H  1
+TI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0099H  1
+INT1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B3H  1
+RCAP2H . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CBH  1
+PS . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BCH  1
+SP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0081H  1
+T2EX . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0091H  1
+OV . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D2H  1
+RCAP2L . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CAH  1
+main . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  j. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0001H  1
+  i. . . . . . . . . . . . . . . . . .  AUTO     DATA   U_CHAR   0000H  1
+  k. . . . . . . . . . . . . . . . . .  AUTO     DATA   U_CHAR   0001H  1
+C_T2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C9H  1
+WR . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B6H  1
+RCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CDH  1
+TCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CCH  1
+GUNFIRE_HC595_RCLK . . . . . . . . . .  ABSBIT   -----  BIT      00B5H  1
+SBUF . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0099H  1
+PCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0087H  1
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+TMOD . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0089H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+_delay_10us. . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0004H  -----
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 7   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+  ten_us . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+IE0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0089H  1
+IE1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008BH  1
+gs32 . . . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+B. . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F0H  1
+gu32 . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+gs16 . . . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+gu16 . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+CP_RL2 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C8H  1
+ACC. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E0H  1
+ET0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A9H  1
+ET1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ABH  1
+TF0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008DH  1
+ET2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ADH  1
+TF1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008FH  1
+TF2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CFH  1
+RB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009AH  1
+TH0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008CH  1
+EX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
+IT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0088H  1
+TH1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008DH  1
+TB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009BH  1
+EX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AAH  1
+IT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008AH  1
+TH2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CDH  1
+P. . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D0H  1
+SM0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009FH  1
+TL0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008AH  1
+SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
+TL1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008BH  1
+SM2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009DH  1
+TL2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CCH  1
+_delay_ms. . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  ms . . . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+  i. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0004H  2
+  j. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0002H  2
+PT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B9H  1
+PT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BBH  1
+RS0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D3H  1
+PT2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
+TR0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008CH  1
+RS1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D4H  1
+TR1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008EH  1
+TR2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CAH  1
+PX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B8H  1
+PX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BAH  1
+DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
+DPL. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0082H  1
+EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
+REN. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009CH  1
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+words_lib_col. . . . . . . . . . . . .  PUBLIC   DATA   ARRAY    0028H  8
+GUNFIRE_HC595_SER. . . . . . . . . . .  ABSBIT   -----  BIT      00B4H  1
+RXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B0H  1
+TXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B1H  1
+F0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D5H  1
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+
+C51 COMPILER V9.60.0.0   MAIN                                                              05/26/2022 06:14:58 PAGE 8   
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    194    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     48       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,108 @@
+[2022-05-25 17:20:51]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 53 OF .\SRC\gunfire_condefine.h: syntax error near '}', expected '__asm'
+*** ERROR C141 IN LINE 12 OF .\SRC\MAIN.C: syntax error near 'void', expected ';'
+*** ERROR C141 IN LINE 12 OF .\SRC\MAIN.C: syntax error near ')', expected '<id>'
+*** ERROR C141 IN LINE 13 OF .\SRC\MAIN.C: syntax error near '{', expected ';'
+*** ERROR C141 IN LINE 17 OF .\SRC\MAIN.C: syntax error near 'for', expected 'hdata'
+*** ERROR C141 IN LINE 17 OF .\SRC\MAIN.C: syntax error near '=', expected ')'
+*** ERROR C129 IN LINE 17 OF .\SRC\MAIN.C: missing ';' before '<'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  7 ERROR(S)
+
+[2022-05-25 17:21:37]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 53 OF .\SRC\gunfire_condefine.h: syntax error near '}', expected '__asm'
+*** ERROR C141 IN LINE 12 OF .\SRC\MAIN.C: syntax error near ')', expected '<id>'
+*** ERROR C141 IN LINE 20 OF .\SRC\MAIN.C: syntax error near 'data', expected 'sizeof'
+*** ERROR C141 IN LINE 21 OF .\SRC\MAIN.C: syntax error near 'data', expected '__asm'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  4 ERROR(S)
+
+[2022-05-25 17:24:46]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 53 OF .\SRC\gunfire_condefine.h: syntax error near '}', expected '__asm'
+*** ERROR C141 IN LINE 12 OF .\SRC\MAIN.C: syntax error near ')', expected '<id>'
+*** ERROR C141 IN LINE 20 OF .\SRC\MAIN.C: syntax error near 'data', expected 'sizeof'
+*** ERROR C141 IN LINE 21 OF .\SRC\MAIN.C: syntax error near 'data', expected '__asm'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  4 ERROR(S)
+
+[2022-05-25 17:25:20]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 12 OF .\SRC\MAIN.C: syntax error near ')', expected '<id>'
+*** ERROR C141 IN LINE 20 OF .\SRC\MAIN.C: syntax error near 'data', expected 'sizeof'
+*** ERROR C141 IN LINE 21 OF .\SRC\MAIN.C: syntax error near 'data', expected '__asm'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  3 ERROR(S)
+
+[2022-05-25 17:27:54]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C231 IN LINE 3 OF .\SRC\MAIN.C: 'GUNFIRE_HC595_SRCLK': redefinition
+*** ERROR C231 IN LINE 4 OF .\SRC\MAIN.C: 'GUNFIRE_HC595_RCLK': redefinition
+*** ERROR C231 IN LINE 5 OF .\SRC\MAIN.C: 'GUNFIRE_HC595_SER': redefinition
+*** ERROR C141 IN LINE 15 OF .\SRC\MAIN.C: syntax error near ')', expected '<id>'
+*** ERROR C141 IN LINE 23 OF .\SRC\MAIN.C: syntax error near 'data', expected 'sizeof'
+*** ERROR C141 IN LINE 24 OF .\SRC\MAIN.C: syntax error near 'data', expected '__asm'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  6 ERROR(S)
+
+[2022-05-25 17:28:11]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 13 OF .\SRC\MAIN.C: syntax error near ')', expected '<id>'
+*** ERROR C141 IN LINE 21 OF .\SRC\MAIN.C: syntax error near 'data', expected 'sizeof'
+*** ERROR C141 IN LINE 22 OF .\SRC\MAIN.C: syntax error near 'data', expected '__asm'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  3 ERROR(S)
+
+[2022-05-25 17:31:50]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 47 OF .\SRC\MAIN.C: 'hc595_write': missing function-prototype
+*** ERROR C267 IN LINE 47 OF .\SRC\MAIN.C: 'hc595_write': requires ANSI-style prototype
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)
+
+[2022-05-25 17:34:44]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 49 OF .\SRC\MAIN.C: 'gunfrie_hc595_wirte': missing function-prototype
+*** ERROR C267 IN LINE 49 OF .\SRC\MAIN.C: 'gunfrie_hc595_wirte': requires ANSI-style prototype
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)
+
+[2022-05-25 17:35:19]	compilation failed at : "f:\Station\EmbedPorj\SerialToParallel_74HC595\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** WARNING C206 IN LINE 49 OF .\SRC\MAIN.C: 'gunfrie_hc595_wirte': missing function-prototype
+*** ERROR C267 IN LINE 49 OF .\SRC\MAIN.C: 'gunfrie_hc595_wirte': requires ANSI-style prototype
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)
+
+[2022-05-25 17:36:08]	[done]
+	build successfully !
+
+[2022-05-25 17:36:16]	[done]
+	build successfully !
+
+[2022-05-25 17:40:00]	[done]
+	build successfully !
+
+[2022-05-25 17:41:21]	[done]
+	build successfully !
+

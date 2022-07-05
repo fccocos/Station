@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/UDP/UDP_BroadCast/ser.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+errno.h
+-
+sys/time.h
+-
+sys/select.h
+-
+

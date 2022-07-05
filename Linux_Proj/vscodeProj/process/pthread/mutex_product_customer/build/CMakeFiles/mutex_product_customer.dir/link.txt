@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/mutex_product_customer.dir/mutex_product_customer.c.o -o mutex_product_customer  -lpthread 

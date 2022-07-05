@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1061</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QToolBox" name="toolBox">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>324</width>
+        <height>436</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>QListWidget操作</string>
+      </attribute>
+      <widget class="QToolButton" name="ListInitTbtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnListInit</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="ListClearTbtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>70</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnListClear</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="ListInsertTbtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnListInsert</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="listAppendTbtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>170</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnListAppend</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="listDelTbtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnListDelete</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>324</width>
+        <height>436</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>QTreeWidget操作</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>324</width>
+        <height>436</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>QTableWidget操作</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>QListWidet</string>
+      </attribute>
+      <widget class="QListWidget" name="listWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>551</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Item1</string>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Item2</string>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>当前变化项</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>20</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>可编辑</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="selectItemTbtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>70</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnSelectItem</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="selectAllTbtn">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>70</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnSelectAll</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="selectNoneTbtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnSelectNone</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="selectInvsTbtn">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>120</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>tBtnSelectInvs</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>QTreeWidget</string>
+      </attribute>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>501</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>499</width>
+          <height>509</height>
+         </rect>
+        </property>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>471</width>
+           <height>481</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>QTableWidget</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>501</width>
+         <height>381</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1061</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="actClearList"/>
+   <addaction name="actInsertItem"/>
+   <addaction name="actAddItem"/>
+   <addaction name="actDelCurItem"/>
+   <addaction name="actInitList"/>
+   <addaction name="actSelectAll"/>
+   <addaction name="actSelectNone"/>
+   <addaction name="actSelectInvs"/>
+  </widget>
+  <action name="actInitList">
+   <property name="icon">
+    <iconset>
+     <normaloff>Icon/initialization.png</normaloff>Icon/initialization.png</iconset>
+   </property>
+   <property name="text">
+    <string>初始化列表</string>
+   </property>
+  </action>
+  <action name="actClearList">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/clear.png</normaloff>:/images/Icon/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除列表</string>
+   </property>
+  </action>
+  <action name="actInsertItem">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/insert.png</normaloff>:/images/Icon/insert.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入项</string>
+   </property>
+   <property name="toolTip">
+    <string>插入项</string>
+   </property>
+  </action>
+  <action name="actAddItem">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/add.png</normaloff>:/images/Icon/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加项</string>
+   </property>
+   <property name="toolTip">
+    <string>添加项</string>
+   </property>
+  </action>
+  <action name="actDelCurItem">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/delete-fill.png</normaloff>:/images/Icon/delete-fill.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除当前项</string>
+   </property>
+  </action>
+  <action name="actSelectAll">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/select-all.png</normaloff>:/images/Icon/select-all.png</iconset>
+   </property>
+   <property name="text">
+    <string>全选</string>
+   </property>
+  </action>
+  <action name="actSelectNone">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/all_noselects.png</normaloff>:/images/Icon/all_noselects.png</iconset>
+   </property>
+   <property name="text">
+    <string>全不选</string>
+   </property>
+  </action>
+  <action name="actSelectInvs">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/selectInvs.png</normaloff>:/images/Icon/selectInvs.png</iconset>
+   </property>
+   <property name="text">
+    <string>反选</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="../QTreeWidgetAndQDockWidget/res.qrc">
+     <normaloff>:/images/Icon/exit.png</normaloff>:/images/Icon/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actSelPopMenu">
+   <property name="text">
+    <string>项选择</string>
+   </property>
+  </action>
+  <action name="actAddFolder">
+   <property name="text">
+    <string>添加目录</string>
+   </property>
+   <property name="toolTip">
+    <string>添加目录</string>
+   </property>
+  </action>
+  <action name="actAddFile">
+   <property name="text">
+    <string>添加文件</string>
+   </property>
+  </action>
+  <action name="actZoomIn">
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actZoomOut">
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actZoomRealSize">
+   <property name="text">
+    <string>实际大小</string>
+   </property>
+  </action>
+  <action name="actDelNode">
+   <property name="text">
+    <string>删除结点</string>
+   </property>
+  </action>
+  <action name="actZoomFitH">
+   <property name="text">
+    <string>适合高度</string>
+   </property>
+  </action>
+  <action name="actScanNodes">
+   <property name="text">
+    <string>遍历结点</string>
+   </property>
+  </action>
+  <action name="actDockVisible">
+   <property name="text">
+    <string>窗体可见</string>
+   </property>
+  </action>
+  <action name="actDockFloat">
+   <property name="text">
+    <string>窗体浮动</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actSelPopMenu</sender>
+   <signal>triggered()</signal>
+   <receiver>actSelectInvs</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,34 @@
+[2022-05-27 17:24:08]	compilation failed at : "f:\Station\EmbedPorj\Interruption\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+.\src\main.c:9: syntax error: token -> 'int' ; column 27
+
+[2022-05-27 17:27:03]	compilation failed at : "f:\Station\EmbedPorj\Interruption\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+.\src\main.c:3: error 2: Initializer element is not a constant expression
+.\src\main.c:5: error 2: Initializer element is not a constant expression
+
+[2022-05-27 17:28:59]	[done]
+	build successfully !
+
+[2022-05-27 17:33:19]	[done]
+	build successfully !
+
+[2022-05-27 17:38:05]	[done]
+	build successfully !
+
+[2022-05-27 17:42:46]	[done]
+	build successfully !
+
+[2022-05-27 17:43:41]	compilation failed at : "f:\Station\EmbedPorj\Interruption\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0178e] in <6d8c0f91f6d94a3cb9e4240f591355c3>:0 
+---
+C51 COMPILER V9.60.0.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 2012 - 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C202 IN LINE 38 OF .\SRC\MAIN.C: 'key': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-05-27 17:44:01]	[done]
+	build successfully !
+

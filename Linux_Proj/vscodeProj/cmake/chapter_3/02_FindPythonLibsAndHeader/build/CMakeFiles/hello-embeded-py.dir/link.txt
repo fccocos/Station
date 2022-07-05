@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/hello-embeded-py.dir/hello-embeded-py.c.o -o hello-embeded-py  /usr/lib/x86_64-linux-gnu/libpython3.10.so 

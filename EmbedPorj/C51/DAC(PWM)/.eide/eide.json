@@ -1,0 +1,105 @@
+{
+  "name": "DAC(PWM)",
+  "type": "C51",
+  "mode": "Target 1",
+  "toolchain": "Keil_C51",
+  "uploader": "stcgal",
+  "dependenceList": [
+    {
+      "groupName": "custom",
+      "depList": [
+        {
+          "name": "default",
+          "sourceDirList": [],
+          "libList": [],
+          "incList": [
+            "D:/Keil_v5/C51/INC/Atmel",
+            "./App/PWM",
+            "./Public"
+          ],
+          "defineList": []
+        }
+      ]
+    }
+  ],
+  "compileConfig": {
+    "options": "null"
+  },
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "App",
+        "files": [
+          {
+            "path": "App/PWM/pwm.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "User",
+        "files": [
+          {
+            "path": "User/main.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Public",
+        "files": [
+          {
+            "path": "Public/public.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "excludeList": [],
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "uploadConfig": {
+    "bin": "",
+    "eepromImgPath": "null",
+    "extraOptions": "",
+    "options": ".eide/stc.flash.json"
+  },
+  "uploadConfigMap": {},
+  "miscInfo": {
+    "uid": "caf5e82f3a820d45e6581683b3c22658"
+  },
+  "targets": {
+    "Target 1": {
+      "compileConfig": {
+        "options": "null"
+      },
+      "uploader": "stcgal",
+      "uploadConfig": {
+        "bin": "",
+        "eepromImgPath": "null",
+        "extraOptions": "",
+        "options": ".eide/stc.flash.json"
+      },
+      "uploadConfigMap": {},
+      "toolchain": "Keil_C51",
+      "custom_dep": {
+        "name": "default",
+        "sourceDirList": [],
+        "libList": [],
+        "incList": [
+          "D:/Keil_v5/C51/INC/Atmel",
+          "App/PWM",
+          "Public"
+        ],
+        "defineList": []
+      },
+      "excludeList": []
+    }
+  },
+  "version": "3.1"
+}

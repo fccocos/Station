@@ -1,0 +1,3 @@
+
+.\build\Debug\src\gunfire_C51_DCStepMotor_func.o,.\build\Debug\src\main.o TO .\build\Debug\DCStepMotor
+PRINT(.\build\Debug\DCStepMotor.map) REMOVEUNUSED

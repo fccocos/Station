@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/02_FindPythonLibsAndHeader/build/CMakeFiles/hello-embeded-py.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/02_FindPythonLibsAndHeader/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/chapter_3/02_FindPythonLibsAndHeader/build/CMakeFiles/rebuild_cache.dir

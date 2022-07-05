@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>str1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>str2</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="str1ComboBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>20</y>
+     <width>641</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Str2ComboBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>641</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>211</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>字符串</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>211</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QPushButton" name="leftBtn">
+       <property name="text">
+        <string>left</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="toUpperBtn">
+       <property name="text">
+        <string>toUpper</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="prependBtn">
+       <property name="text">
+        <string>Prepend</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="rightBtn">
+       <property name="text">
+        <string>right</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="toLowerBtn">
+       <property name="text">
+        <string>toLower</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="AppendBtn">
+       <property name="text">
+        <string>Append</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="sectionBtn">
+       <property name="text">
+        <string>section</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="simpifiedBtn">
+       <property name="text">
+        <string>simpified</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="trimmedBtn">
+       <property name="text">
+        <string>trimmed</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>100</y>
+     <width>101</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>数字</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="sizeBtn">
+       <property name="text">
+        <string>size</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="countBtn">
+       <property name="text">
+        <string>count</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="indexOfBtn">
+       <property name="text">
+        <string>indexOf</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="lastIndexOfBtn">
+       <property name="text">
+        <string>lasIndexOf</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>100</y>
+     <width>221</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>逻辑判断</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>221</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="endsWidthBtn">
+       <property name="text">
+        <string>endsWidth</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="startsWidth">
+       <property name="text">
+        <string>startsWidth</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="isNullBtn">
+       <property name="text">
+        <string>isNull</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="isEmpty">
+       <property name="text">
+        <string>isEmpty</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="containsBtn">
+       <property name="text">
+        <string>contains</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>53</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>结果</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="resultLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>390</y>
+     <width>621</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="containsCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>430</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>contains</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="countSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>551</x>
+     <y>430</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>430</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>count()</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

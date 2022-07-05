@@ -1,0 +1,153 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          05/25/2022  17:41:21  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\DEBUG\SRC\MAIN.O TO .\BUILD\DEBUG\SERIALTOPARALLEL_74HC595 PRINT (.\build\Debug\Seri
+>> alToParallel_74HC595.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\DEBUG\SERIALTOPARALLEL_74HC595 (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000121H   CODE
+I:000000H   I:000000H   I:00007FH   000010H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\DEBUG\SERIALTOPARALLEL_74HC595 (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00000FH   000008H   BYTE   UNIT     DATA           ?DT?MAIN
+000010H   000010H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000034H   000032H   BYTE   UNIT     CODE           ?PR?_GUNFIRE_HC595_WIRTE?MAIN
+000035H   00005BH   000027H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+00005CH   00007AH   00001FH   BYTE   UNIT     CODE           ?PR?_DELAY_MS?MAIN
+00007BH   000089H   00000FH   BYTE   UNIT     CODE           ?PR?_DELAY_10US?MAIN
+00008AH   000094H   00000BH   BYTE   UNIT     CODE           ?C_INITSEG
+000095H   0007FFH   00076BH   ---    ---      **GAP**
+000800H   00088BH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           00000BH   BYTE   UNIT     CODE           ?PR?_SLEEP?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\DEBUG\SERIALTOPARALLEL_74HC595 (MAIN)
+
+
+FUNCTION/MODULE                 BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE     START  STOP  START  STOP
+=======================================================
+?C_C51STARTUP                  ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                      ----- -----  ----- -----
+  +--> _GUNFIRE_HC595_WIRTE/MAIN
+  +--> _DELAY_MS/MAIN
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/25/2022  17:41:21  PAGE 2
+
+
+
+_GUNFIRE_HC595_WIRTE/MAIN      ----- -----  ----- -----
+  +--> _DELAY_10US/MAIN
+
+_DELAY_10US/MAIN               ----- -----  ----- -----
+
+_DELAY_MS/MAIN                 ----- -----  ----- -----
+
+?C_INITSEG                     ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\DEBUG\SERIALTOPARALLEL_74HC595 (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000847H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      0100007FH   CODE     ---       _delay_10us
+      0100005CH   CODE     ---       _delay_ms
+      01000003H   CODE     ---       _gunfire_hc595_wirte
+*DEL*:00000000H   CODE     ---       _sleep
+      00000008H   DATA     ---       hc595_buf
+      01000035H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\DEBUG\SERIALTOPARALLEL_74HC595 (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      00000008H   PUBLIC    DATA     ---       hc595_buf
+      01000035H   PUBLIC    CODE     ---       main
+      01000003H   PUBLIC    CODE     ---       _gunfire_hc595_wirte
+      0100005CH   PUBLIC    CODE     ---       _delay_ms
+      0100007FH   PUBLIC    CODE     ---       _delay_10us
+
+      0100007BH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100007FH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100005CH   BLOCK     CODE     ---       LVL=0
+      0100005CH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000004H   SYMBOL    DATA     VOID      i
+      00000002H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000005H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000003H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000035H   BLOCK     CODE     ---       LVL=0
+      01000035H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000001H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+LX51 LINKER/LOCATER V4.66.97.0                                                        05/25/2022  17:41:21  PAGE 3
+
+
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000847H   PUBLIC    CODE     ---       ?C_START
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 009CH BYTE ( 7%) *
+******************************************************************************
+
+Program Size: data=17.0 xdata=0 const=0 code=289
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

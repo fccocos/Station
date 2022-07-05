@@ -1,0 +1,3 @@
+
+.\build\Debug\src\main.o TO .\build\Debug\UART
+PRINT(.\build\Debug\UART.map) REMOVEUNUSED

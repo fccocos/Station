@@ -1,0 +1,4 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/UDP/UDP_MultiCast/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/UDP/UDP_MultiCast/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/UDP/UDP_MultiCast/build/CMakeFiles/ser.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/UDP/UDP_MultiCast/build/CMakeFiles/cli.dir

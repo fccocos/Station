@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/process/pthread/mutex_product_customer/build/CMakeFiles/mutex_product_customer.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/process/pthread/mutex_product_customer/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/process/pthread/mutex_product_customer/build/CMakeFiles/rebuild_cache.dir

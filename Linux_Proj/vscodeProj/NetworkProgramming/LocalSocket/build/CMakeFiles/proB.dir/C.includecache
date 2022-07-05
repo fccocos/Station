@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/LocalSocket/ProB.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/types.h
+-
+sys/un.h
+-
+sys/socket.h
+-
+errno.h
+-
+signal.h
+-
+unistd.h
+-
+fcntl.h
+-
+sys/wait.h
+-
+

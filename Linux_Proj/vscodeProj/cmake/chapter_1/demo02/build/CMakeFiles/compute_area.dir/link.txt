@@ -1,0 +1,1 @@
+/usr/bin/c++  -fno-execptions -fno-rtti;-fno-rtti;-fno-exceptions   CMakeFiles/compute_area.dir/compute_area.cpp.o  -o compute_area  libgeometry.a 

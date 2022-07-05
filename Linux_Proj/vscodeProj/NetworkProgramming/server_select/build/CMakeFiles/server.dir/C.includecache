@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Station/Linux_Proj/vscodeProj/NetworkProgramming/server_select/server.c
+sys/types.h
+-
+sys/types.h
+-
+unistd.h
+-
+stdlib.h
+-
+stdio.h
+-
+errno.h
+-
+arpa/inet.h
+-
+sys/select.h
+-
+sys/time.h
+-
+string.h
+-
+time.h
+-
+

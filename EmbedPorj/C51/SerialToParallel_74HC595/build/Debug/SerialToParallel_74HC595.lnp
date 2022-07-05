@@ -1,0 +1,3 @@
+
+.\build\Debug\src\main.o TO .\build\Debug\SerialToParallel_74HC595
+PRINT(.\build\Debug\SerialToParallel_74HC595.map) REMOVEUNUSED

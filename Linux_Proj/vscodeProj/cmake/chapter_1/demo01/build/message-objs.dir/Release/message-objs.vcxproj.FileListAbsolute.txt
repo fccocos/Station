@@ -1,0 +1,1 @@
+F:\Station\Linux_Proj\vscodeProj\cmake\demo01\build\message-objs.dir\Release\message-objs.lib

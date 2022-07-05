@@ -1,0 +1,4 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/build/CMakeFiles/compute_area.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/cmake/demo02/build/CMakeFiles/geometry.dir

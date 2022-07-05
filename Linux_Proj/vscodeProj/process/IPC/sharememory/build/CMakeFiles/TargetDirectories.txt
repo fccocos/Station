@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/process/sharememory/build/CMakeFiles/testMyshm.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/process/sharememory/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/process/sharememory/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+
+.\build\Debug\src\main.o TO .\build\Debug\静态数码管
+PRINT(.\build\Debug\静态数码管.map) REMOVEUNUSED

@@ -1,0 +1,3 @@
+/mnt/f/Station/Linux_Proj/vscodeProj/process/environ/build/CMakeFiles/rebuild_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/process/environ/build/CMakeFiles/edit_cache.dir
+/mnt/f/Station/Linux_Proj/vscodeProj/process/environ/build/CMakeFiles/main.dir

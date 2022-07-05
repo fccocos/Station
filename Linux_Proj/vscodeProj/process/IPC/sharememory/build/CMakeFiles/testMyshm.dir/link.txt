@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/testMyshm.dir/testMyshm.c.o CMakeFiles/testMyshm.dir/mysem.c.o CMakeFiles/testMyshm.dir/Myshm.c.o -o testMyshm  -lcunit 

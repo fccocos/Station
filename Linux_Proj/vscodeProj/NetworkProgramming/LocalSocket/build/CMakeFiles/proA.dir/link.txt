@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/proA.dir/proA.c.o  -o proA 
